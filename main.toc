@@ -1,0 +1,55 @@
+\changetocdepth {4}
+\changetocdepth {2}
+\babel@toc {brazil}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{INTRODUÇÃO}}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}PROBLEMA}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}OBJETIVOS}{6}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}OBJETIVO GERAL}{6}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}OBJETIVOS ESPECÍFICOS}{6}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}JUSTIFICATIVA}{6}{section.1.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{FUNDAMENTAÇÃO TEÓRICA}}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}EDUCAÇÃO INCLUSIVA E DEFICIÊNCIA INTELECTUAL NO BRASIL}{7}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}BASE LEGAL}{7}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}CRESCIMENTO DAS MATRÍCULAS}{7}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}A LACUNA ENTRE A LEI E A PRÁTICA}{7}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}A DIFICULDADE ESPECÍFICA DO PROFESSOR}{8}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}DIFICULDADES ESTRUTURAIS E FINANCEIRAS DA ESCOLA PÚBLICA NO ENSINO DE ALUNOS COM DI}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}FALTA DE FORMAÇÃO CONTINUADA E AUSÊNCIA DE ICENTIVO FINANCEIRO}{9}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}PRECARIEDADE DE RECURSOS MATERIAIS E INFRAESTRUTRA}{9}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}FALTA DE PROFISSIONAIS ESPECIALIZADOS E SOBRECARGA DOCENTE}{10}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}A DEPÊNDENCIA DE RECURSOS EXTERNOS E A LÓGICA DO DESINVESTIMENTO}{10}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}INTELIGÊNCIA ARTIFICIAL GENERATIVA COMO FERRAMENTA DE APOIO AO PROFESSOR}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}IA GENERATIVA E O PROBLEMA DA ESCOLA PÚBLICA}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}O PROFESSOR NO CONTROLE: ATIVIDADE COMO RASCUNHO}{11}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}TRABALHOS CORRELATOS}{12}{section.2.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{MATERIAIS E MÉTODOS}}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Materiais e ambiente de desenvolvimento}{14}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Metodologia de desenvolvimento}{14}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Requisitos do sistema}{15}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Modelagem do Sistenma}{16}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}DIAGRAMA DE CASOS DE USO}{16}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}DIAGRAMA DE CLASSES}{16}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}MODELAGEM E IMPLEMENTAÇÃO DO BANCO DE DADOS}{17}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}IMPLEMENTAÇÃO DO SISTEMA}{18}{section.3.5}%
+\contentsline {section}{\numberline {3.6}TESTES E VALIDAÇÃO}{18}{section.3.6}%
+\contentsline {section}{\numberline {3.7}IMPLANTAÇÃO E REPRODUTIBILIDADE}{20}{section.3.7}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{RESULTADOS}}{21}{chapter.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{CONCLUSÃO}}{22}{chapter.5}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{AGRADECIMENTOS}}{23}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Citações (ABNT NBR 10520)}{24}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Citação direta curta (até 3 linhas)}{24}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Citação direta longa (mais de 3 linhas)}{24}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Citação indireta (paráfrase)}{24}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Citação de citação (apud)}{25}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Comandos úteis (abntex2cite)}{25}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Observações finais}{25}{subsection.6.1.6}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{26}{section*.13}%
+\vspace {\cftbeforechapterskip }

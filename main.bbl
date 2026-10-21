@@ -1,0 +1,164 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[BRASIL 2015]{brasil2015lbi}
+\abntrefinfo{BRASIL}{BRASIL}{2015}
+{BRASIL. \textbf{Lei nº 13.146, de 6 de julho de 2015}. Brasília, DF:
+  Presidência da República, 2015.
+Institui a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da
+  Pessoa com Deficiência).}
+
+\bibitem[BRASIL 2020]{brasil2020pnee}
+\abntrefinfo{BRASIL}{BRASIL}{2020}
+{BRASIL. \textbf{Decreto nº 10.502, de 30 de setembro de 2020}. Brasília, DF:
+  Presidência da República, 2020.
+Institui a Política Nacional de Educação Especial: Equitativa, Inclusiva e
+  com Aprendizado ao Longo da Vida.}
+
+\bibitem[BRASIL 2023]{brasil2023revogacao}
+\abntrefinfo{BRASIL}{BRASIL}{2023}
+{BRASIL. \textbf{Decreto nº 11.370, de 1º de janeiro de 2023}. Brasília, DF:
+  Presidência da República, 2023.
+Revoga o Decreto nº 10.502, de 30 de setembro de 2020.}
+
+\bibitem[CLOUDFLARE 2026]{cloudflare2026d1}
+\abntrefinfo{CLOUDFLARE}{CLOUDFLARE}{2026a}
+{CLOUDFLARE. \textbf{Cloudflare D1: Serverless SQL Database}. 2026.
+Dispon{\'\i}vel em: \url{https://developers.cloudflare.com/d1/}. Acesso em: 21
+  set. 2026.}
+
+\bibitem[CLOUDFLARE 2026]{cloudflare2026gemma}
+\abntrefinfo{CLOUDFLARE}{CLOUDFLARE}{2026b}
+{CLOUDFLARE. \textbf{Google Gemma 4 26B A4B now available on Workers AI}. 2026.
+Dispon{\'\i}vel em:
+  \url{https://developers.cloudflare.com/changelog/post/2026-04-04-gemma-4-26b-a4b-workers-ai/}.
+  Acesso em: 21 set. 2026.}
+
+\bibitem[CLOUDFLARE 2026]{cloudflare2026workersai}
+\abntrefinfo{CLOUDFLARE}{CLOUDFLARE}{2026c}
+{CLOUDFLARE. \textbf{Workers AI: Serverless GPU-powered inference on
+  Cloudflare's global network}. 2026.
+Dispon{\'\i}vel em: \url{https://developers.cloudflare.com/workers-ai/}. Acesso
+  em: 21 set. 2026.}
+
+\bibitem[CUNHA 2025]{cunha2025recursos}
+\abntrefinfo{CUNHA}{CUNHA}{2025}
+{CUNHA, C. B. L.~d.
+\textbf{Políticas de inclusão e os desafios da implementação: recursos,
+  formação e prática pedagógica}.
+Tese (Tese de doutorado) --- Universidade Tiradentes, 2025.}
+
+\bibitem[EDUNIA 2026]{edunia2026}
+\abntrefinfo{EDUNIA}{EDUNIA}{2026}
+{EDUNIA. \textbf{EDUNIA: Plataforma de educação especial e inclusiva com
+  inteligência artificial}. 2026.
+Dispon{\'\i}vel em: \url{https://www.edunia.app/}. Acesso em: 23 set. 2026.}
+
+\bibitem[FRANÇA e PRIETO 2025]{franca2025financiamento}
+\abntrefinfo{FRANÇA e PRIETO}{FRANÇA; PRIETO}{2025}
+{FRANÇA, M.~G.; PRIETO, R.~G. O financiamento da educação especial no plano
+  nacional de educação (2014--2024): Entraves e desafios.
+\textbf{Revista Brasileira de Educação Especial}, v.~31, p. e0341, 2025.}
+
+\bibitem[GOMES 2026]{forum2026df}
+\abntrefinfo{GOMES}{GOMES}{2026}
+{GOMES, L. \textbf{Falta de investimento expõe sucateamento da educação
+  especial inclusiva no DF}. Revista Fórum, 2026.
+Dispon{\'\i}vel em:
+  \url{https://revistaforum.com.br/opiniao/falta-de-investimento-expoe-sucateamento-da-educacao-especial-inclusiva-no-df/}.
+  Acesso em: 21 set. 2026.}
+
+\bibitem[INEP 2025]{inep2025censo}
+\abntrefinfo{INEP}{INEP}{2025}
+{INEP. \textbf{Censo Escolar da Educação Básica 2025: Resumo Técnico}.
+Brasília, DF, 2025. Dispon{\'\i}vel em:
+  \url{https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar}.
+  Acesso em: 21 set. 2026.}
+
+\bibitem[INKLUO 2026]{inklua2026}
+\abntrefinfo{INKLUO}{INKLUO}{2026}
+{INKLUO. \textbf{Inkluo: Plataforma de gestão da Educação Especial e
+  Inclusiva}. 2026.
+Dispon{\'\i}vel em: \url{https://www.inklua.com/}. Acesso em: 23 set. 2026.}
+
+\bibitem[LIEVORE e MELO 2025]{lievore2025financiamento}
+\abntrefinfo{LIEVORE e MELO}{LIEVORE; MELO}{2025}
+{LIEVORE, P. T.~M.; MELO, D. C. F.~d. Financiamento da educação especial: um
+  panorama das políticas de financiamento no brasil na literatura educacional.
+\textbf{Reflexão e Ação}, v.~33, p. 1--20, 2025.}
+
+\bibitem[MATUOKA 2026]{educacaointegral2026}
+\abntrefinfo{MATUOKA}{MATUOKA}{2026}
+{MATUOKA, I. \textbf{Educação Especial: Inclusão cresce no Brasil, mas
+  desafios persistem}. Centro de Referências em Educação Integral, 2026.
+Dispon{\'\i}vel em:
+  \url{https://educacaointegral.org.br/reportagens/educacao-especial-inclusao-cresce-no-brasil-mas-desafios-persistem/}.
+  Acesso em: 21 set. 2026.}
+
+\bibitem[MENDES 2026]{irm2026panorama}
+\abntrefinfo{MENDES}{MENDES}{2026}
+{MENDES, I.~R. \textbf{Panorama da Educação Especial 2025}. São Paulo:
+  Instituto Rodrigo Mendes, 2026.}
+
+\bibitem[MPEDUC 2025]{mpeduc2025}
+\abntrefinfo{MPEDUC}{MPEDUC}{2025}
+{MPEDUC. \textbf{Projeto MPEduc realiza escuta pública em Amaralina (GO) para
+  identificar desafios}. 2025.
+Dispon{\'\i}vel em:
+  \url{https://mpeduc.mp.br/viewNoticia?idFeeder=12cf9e0c3af8a97891a00ac3295b2c4c}.
+  Acesso em: 21 set. 2026.}
+
+\bibitem[NASCIMENTO et al. 2024]{nascimento2024software}
+\abntrefinfo{NASCIMENTO et al.}{NASCIMENTO et al.}{2024}
+{NASCIMENTO, S. D.; BATISTA, C.~T. W.; PEDERIVA, M.~R. Software e deficiência
+  intelectual no contexto da educação inclusiva. In:  \textbf{Anais
+  CIET:Horizonte}. São Carlos: Universidade Federal de São Carlos, 2024.
+  v.~4, n.~1. Dispon{\'\i}vel em:
+  \url{https://ciet.ufscar.br/submissao/index.php/ciet/article/view/1165}.
+  Acesso em: 23 set. 2026.}
+
+\bibitem[OLIVEIRA et al. 2025]{oliveira2025escolas}
+\abntrefinfo{OLIVEIRA et al.}{OLIVEIRA et al.}{2025}
+{OLIVEIRA, P. C. S.~d.; LIMA, M. R. S.~S.; SPINDOLA, M.~M.; MENDONÇA, A.
+  P.~B.; SOUZA, F. L. d.~C.; CASTRO, F. H. d.~R.; LOPES, R.~R.; SILVA, V. M.~d.
+  Escolas regulares: desafios, práticas e perspectivas contemporâneas.
+\textbf{Revista Foco}, v.~18, n.~5, p. 01--12, 2025.}
+
+\bibitem[SALINA 2022]{salina2022lps}
+\abntrefinfo{SALINA}{SALINA}{2022}
+{SALINA, G.~H.
+\textbf{Abordagem em linhas de produto de software aplicada ao gerenciamento de
+  atividades escolares: uma instanciação voltada para alunos com deficiência
+  intelectual}.
+Disserta\c{c}\~{a}o (Trabalho de Conclusão de Curso (Bacharelado em Ciência
+  da Computação)) --- Universidade Tecnológica Federal do Paraná, Ponta
+  Grossa, 2022.
+Dispon{\'\i}vel em:
+  \url{https://repositorio.utfpr.edu.br/jspui/handle/1/30625}. Acesso em: 23
+  set. 2026.}
+
+\bibitem[SOUZA e UZÊDA 2025]{souza2025acessibilidade}
+\abntrefinfo{SOUZA e UZÊDA}{SOUZA; UZÊDA}{2025}
+{SOUZA, R.~C. E.; UZÊDA, S. D.~Q. Acessibilidade ao conhecimento no processo
+  de inclusão de estudantes com deficiência intelectual no ensino
+  fundamental.
+\textbf{Inter-Ação}, v.~50, n.~3, p.~1030, 2025.}
+
+\bibitem[VAZ 2026]{engaja2026}
+\abntrefinfo{VAZ}{VAZ}{2026}
+{VAZ, B. \textbf{Engaja+: Uma Plataforma Baseada em LLM para Apoio a
+  Professores no Ensino Inclusivo de Alunos com TEA}. 2026.
+Dispon{\'\i}vel em: \url{https://zenodo.org/records/19583223}. Acesso em: 21
+  set. 2026.}
+
+\bibitem[VÍNCULOO 2026]{vinculoo2026}
+\abntrefinfo{VÍNCULOO}{VÍNCULOO}{2026}
+{VÍNCULOO. \textbf{Vínculoo®: Plataforma de educação especial e
+  inclusiva}. 2026.
+Dispon{\'\i}vel em: \url{https://vinculoo.com.br/}. Acesso em: 23 set. 2026.}
+
+\end{thebibliography}

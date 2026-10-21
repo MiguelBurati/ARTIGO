@@ -1,0 +1,98 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: 01-elementos-pre-textuais/dados.aux
+Reallocating 'name_of_file' (item size: 1) to 35 items.
+A level-1 auxiliary file: 01-elementos-pre-textuais/capa.aux
+Reallocating 'name_of_file' (item size: 1) to 39 items.
+A level-1 auxiliary file: 01-elementos-pre-textuais/resumoPt.aux
+Reallocating 'name_of_file' (item size: 1) to 39 items.
+A level-1 auxiliary file: 01-elementos-pre-textuais/resumoEn.aux
+Reallocating 'name_of_file' (item size: 1) to 43 items.
+A level-1 auxiliary file: 01-elementos-pre-textuais/listaFiguras.aux
+Reallocating 'name_of_file' (item size: 1) to 39 items.
+A level-1 auxiliary file: ./02-elementos-textuais/introducao.aux
+Reallocating 'name_of_file' (item size: 1) to 39 items.
+A level-1 auxiliary file: ./02-elementos-textuais/tecnicaref.aux
+Reallocating 'name_of_file' (item size: 1) to 40 items.
+A level-1 auxiliary file: ./02-elementos-textuais/disposicoes.aux
+Reallocating 'name_of_file' (item size: 1) to 38 items.
+A level-1 auxiliary file: ./02-elementos-textuais/estrutura.aux
+Reallocating 'name_of_file' (item size: 1) to 38 items.
+A level-1 auxiliary file: ./02-elementos-textuais/ambientes.aux
+Reallocating 'name_of_file' (item size: 1) to 37 items.
+A level-1 auxiliary file: ./02-elementos-textuais/citacoes.aux
+Reallocating 'name_of_file' (item size: 1) to 44 items.
+A level-1 auxiliary file: ./03-elementos-pos-textuais/referencias.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+The style file: abntex2-alf.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Database file #1: abntex2-options.bib
+Database file #2: referencias.bib
+Warning--I didn't find a database entry for "marshall1980"
+Warning--I didn't find a database entry for "angelo1993"
+Warning--I didn't find a database entry for "tanenbaum1995sistemas"
+Warning--I didn't find a database entry for "de2017sistema"
+Warning--I didn't find a database entry for "silva1991"
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 26 entries,
+            6714 wiz_defined-function locations,
+            1333 strings with 14306 characters,
+and the built_in function-call counts, 31680 in all, are:
+= -- 3697
+> -- 466
+< -- 821
++ -- 1017
+- -- 148
+* -- 1877
+:= -- 3933
+add.period$ -- 97
+call.type$ -- 27
+change.case$ -- 184
+chr.to.int$ -- 48
+cite$ -- 22
+duplicate$ -- 3113
+empty$ -- 1475
+format.name$ -- 696
+if$ -- 6411
+int.to.chr$ -- 5
+int.to.str$ -- 3
+missing$ -- 417
+newline$ -- 119
+num.names$ -- 110
+pop$ -- 490
+preamble$ -- 1
+purify$ -- 85
+quote$ -- 0
+skip$ -- 3411
+stack$ -- 1
+substring$ -- 1324
+swap$ -- 1143
+text.length$ -- 25
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6
+warning$ -- 0
+while$ -- 155
+width$ -- 0
+write$ -- 353
+(There were 5 warnings)
