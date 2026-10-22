@@ -148,35 +148,41 @@ A IA generativa não substitui o professor. Toda atividade produzida é armazena
 Esse mecanismo está alinhado à literatura sobre IA na educação inclusiva \cite{engaja2026}, que alerta para riscos como viés algorítmico, alucinações e padronização excessiva. A revisão humana obrigatória é uma barreira de segurança pedagógica e ética.
 
 \section{TRABALHOS CORRELATOS}
-A EDUNIA é uma plataforma de educação especial e inclusiva que utiliza IA para personalizar atividades pedagógicas. O professor ou responsável fornece informações sobre o estudante (anamnese, arquivo ou fotografia de atividade) e interesses da criança, e a plataforma gera uma atividade adaptada, disponível em PDF, alinhada à BNCC. A ferramenta contempla estudantes com TEA, TDAH e outras necessidades educacionais \cite{edunia2026}.
-
 A Inklua é uma plataforma de gestão da Educação Especial e Inclusiva que centraliza informações dos estudantes e auxilia no planejamento, acompanhamento e documentação. Utiliza IA para auxiliar na criação de PAEE, PEI e atividades adaptadas, além de oferecer recursos para planos de aula, monitoramento da aprendizagem e avaliação de habilidades \cite{inklua2026}.
 
 A Vínculoo é uma plataforma digital de educação especial e inclusiva que utiliza IA para apoiar professores no acompanhamento e planejamento pedagógico. Seu recurso \textit{Apoio Inteligente} analisa laudos, relatórios e observações para sugerir metas e estratégias pedagógicas, auxiliando na elaboração de PEI e PAEE e na adaptação de atividades. A plataforma enfatiza que a IA não substitui a decisão do professor, apresentando suas produções como sugestões editáveis \cite{vinculoo2026}.
 
-No âmbito acadêmico, SALINA (\citeyear{salina2022lps}) apresenta uma abordagem de linhas de produto de software aplicada ao gerenciamento de atividades escolares, com instanciação direcionada a alunos com deficiência intelectual. Já NASCIMENTO; BATISTA; PEDERIVA (\citeyear{nascimento2024software}) abordam o desenvolvimento e a aplicação de um software educacional voltado para alfabetização e letramento de crianças com deficiência intelectual.
+No âmbito acadêmico, SALINA (\citeyear{salina2022lps}) apresenta uma abordagem de linhas de produto de software aplicada ao gerenciamento de atividades escolares, com instanciação direcionada a alunos com deficiência intelectual.
 
-Esses trabalhos mostram que a busca por soluções tecnológicas para a educação inclusiva já é objeto de diferentes iniciativas, tanto no mercado quanto na academia. No entanto, a maioria das plataformas analisadas concentra-se em gestão, documentação, acompanhamento pedagógico ou adaptação de materiais de forma mais ampla, enquanto o presente trabalho se propõe a apoiar a criação de atividades adaptadas com foco em professores do ensino fundamental, considerando limitações do contexto escolar público e a necessidade de revisão humana no processo de geração de conteúdo. O Quadro 1 sintetiza a lacuna que este trabalho se propõe a preencher.
+Já NASCIMENTO; BATISTA; PEDERIVA (\citeyear{nascimento2024software}) abordam o desenvolvimento e a aplicação de um software educacional voltado para alfabetização e letramento de crianças com deficiência intelectual.
 
-\begin{table}[h!]
-\centering
-\caption{Lacuna identificada em relação aos trabalhos correlatos}
-\label{tab:lacuna}
-\begin{tabular}{|p{3.5cm}|p{4cm}|p{5cm}|}
-\hline
-\textbf{Solução} & \textbf{Foco principal} & \textbf{Limitação em relação ao presente trabalho} \\
-\hline
-EDUNIA & Personalização de atividades com base em interesses e BNCC & Voltada ao professor ou responsável, sem foco explícito nas limitações da escola pública \\
-\hline
-Inkluo & Gestão e documentação da Educação Especial & Ênfase em gestão, não na criação de atividades adaptadas \\
-\hline
-Vínculoo & Acompanhamento pedagógico e elaboração de PEI/PAEE & Foco em planejamento e documentação, não na geração de atividades \\
-\hline
-SALINA (2022) & Linhas de produto de software para gestão de atividades & Abordagem acadêmica de gestão, não de geração de conteúdo adaptado \\
-\hline
-NASCIMENTO; BATISTA; PEDERIVA (2024) & Software educacional para alfabetização e letramento & Escopo restrito à alfabetização, sem apoio amplo à adaptação curricular \\
-\hline
-\textbf{Presente trabalho} & \textbf{Criação de atividades adaptadas para professores do ensino fundamental} & \textbf{Considera limitações do contexto escolar público e exige revisão humana obrigatória} \\
-\hline
-\end{tabular}
-\end{table}
+A EDUNIA é uma plataforma de educação especial e inclusiva que utiliza IA para personalizar atividades pedagógicas. O professor ou responsável fornece informações sobre o estudante (anamnese, arquivo ou fotografia de atividade) e interesses da criança, e a plataforma gera uma atividade adaptada, disponível em PDF, alinhada à BNCC. A ferramenta contempla estudantes com TEA, TDAH e outras necessidades educacionais \cite{edunia2026}.
+
+Esses trabalhos mostram que a busca por soluções tecnológicas para a educação inclusiva já é objeto de diferentes iniciativas, tanto no mercado quanto na academia. No entanto, a maioria das plataformas analisadas concentra-se em gestão, documentação, acompanhamento pedagógico ou adaptação de materiais de forma mais ampla, enquanto o presente trabalho se propõe a apoiar a criação de atividades adaptadas com foco em professores do ensino fundamental, considerando limitações do contexto escolar público e a necessidade de revisão humana no processo de geração de conteúdo. O Quadro~\ref{qua:quaexe} sintetiza a lacuna que este trabalho se propõe a preencher.
+
+\begin{quadro}[H]
+
+    \begin{center}
+    \caption{Lacuna identificada em relação aos trabalhos correlatos.}\label{qua:quaexe}
+        \begin{tabular}{|p{3cm}|p{4.5cm}|p{6cm}|}
+            \hline
+            \textbf{Solução} & \textbf{Foco principal} & \textbf{Limitação em relação ao presente trabalho} \\
+            \hline
+            Inklua & Gestão e documentação da Educação Especial & Ênfase em gestão, não na criação de atividades adaptadas \\
+            \hline
+            Vínculoo & Acompanhamento pedagógico e elaboração de PEI/PAEE & Foco em planejamento e documentação, não na geração de atividades \\
+            \hline
+            SALINA (2022) & Linhas de produto de software para gestão de atividades & Abordagem acadêmica de gestão, não de geração de conteúdo adaptado \\
+            \hline
+            EDUNIA & Personalização de atividades com base em interesses e BNCC & Voltada ao professor ou responsável, sem foco explícito nas limitações da escola pública \\
+            \hline
+            NASCIMENTO; BATISTA; PEDERIVA (2024) & Software educacional para alfabetização e letramento & Escopo restrito à alfabetização, sem apoio amplo à adaptação curricular \\
+            \hline
+            \textbf{Presente trabalho} & \textbf{Criação de atividades adaptadas para professores do ensino fundamental} & \textbf{Considera limitações do contexto escolar público e exige revisão humana obrigatória} \\
+            \hline
+        \end{tabular}
+        {\raggedright \fonte{Elaborado pelos autores (2026).}}
+    \end{center}
+    \vspace*{-0,8cm}
+
+\end{quadro}
