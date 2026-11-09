@@ -5,6 +5,15 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[BERTOLETTI e ROSSI 2026]{bertoletti2026light}
+\abntrefinfo{BERTOLETTI e ROSSI}{BERTOLETTI; ROSSI}{2026}
+{BERTOLETTI, P.; ROSSI, M. Light and color in low-arousal design: a review
+  towards inclusive sensory environments for neurodiversity.
+\textbf{Color Culture and Science}, v.~18, n.~1, p. 1--10, 2026.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/S2949678026000401}.
+  Acesso em: 18 out. 2026.}
+
 \bibitem[BRASIL 2015]{brasil2015lbi}
 \abntrefinfo{BRASIL}{BRASIL}{2015}
 {BRASIL. \textbf{Lei nº 13.146, de 6 de julho de 2015}. Brasília, DF:
@@ -72,6 +81,17 @@ Dispon{\'\i}vel em:
   \url{https://revistaforum.com.br/opiniao/falta-de-investimento-expoe-sucateamento-da-educacao-especial-inclusiva-no-df/}.
   Acesso em: 21 set. 2026.}
 
+\bibitem[IMAS et al. 2026]{imas2026role}
+\abntrefinfo{IMAS et al.}{IMAS et al.}{2026}
+{IMAS, M.; EMBONG, A.~H.; MOKHTAR, W. K. A.~W.; IBRAHIM, A.; ZULKPLI, R.~A. The
+  role of colour in educational materials and its influence on learning
+  environments: A cognitive psychology perspective for educational planning.
+\textbf{International Journal of Special Education}, v.~41, n.~7s, p. 990--999,
+  2026.
+Dispon{\'\i}vel em:
+  \url{https://internationalsped.com/index.php/ijse/article/download/3297/623}.
+  Acesso em: 18 out. 2026.}
+
 \bibitem[INEP 2025]{inep2025censo}
 \abntrefinfo{INEP}{INEP}{2025}
 {INEP. \textbf{Censo Escolar da Educação Básica 2025: Resumo Técnico}.
@@ -84,6 +104,23 @@ Brasília, DF, 2025. Dispon{\'\i}vel em:
 {INKLUA. \textbf{Inkluo: Plataforma de gestão da Educação Especial e
   Inclusiva}. 2015.
 Dispon{\'\i}vel em: \url{https://www.inklua.com/}. Acesso em: 23 set. 2026.}
+
+\bibitem[KOZYBAYEV 2026]{kozybayev2026cognitive}
+\abntrefinfo{KOZYBAYEV}{KOZYBAYEV}{2026}
+{KOZYBAYEV, M. \textbf{Cognitive Color Filter Theory: Proposed Chromatic
+  Scaffolding Approach to Neuroinclusive Educational Design}. Zenodo, 2026.
+Dispon{\'\i}vel em: \url{https://zenodo.org/records/19608847}. Acesso em: 18
+  out. 2026.}
+
+\bibitem[LI et al. 2026]{li2026motion}
+\abntrefinfo{LI et al.}{LI et al.}{2026}
+{LI, Z.; COSTA, A.; CEYHAN, P.; CRUICKSHANK, L.
+\textbf{Motion graphics as an educational tool that supports learning English
+  vocabulary by Chinese students}.
+Tese (Tese de Doutorado) --- Lancaster University, Lancaster, 2026.
+Dispon{\'\i}vel em:
+  \url{https://eprints.lancs.ac.uk/id/eprint/235573/1/2025lizijunphd.pdf}.
+  Acesso em: 18 out. 2026.}
 
 \bibitem[LIEVORE e MELO 2025]{lievore2025financiamento}
 \abntrefinfo{LIEVORE e MELO}{LIEVORE; MELO}{2025}
@@ -103,6 +140,17 @@ Dispon{\'\i}vel em:
 \abntrefinfo{MENDES}{MENDES}{2026}
 {MENDES, I.~R. \textbf{Panorama da Educação Especial 2025}. São Paulo:
   Instituto Rodrigo Mendes, 2026.}
+
+\bibitem[MORELLATO 2025]{morellato2025comunicacao}
+\abntrefinfo{MORELLATO}{MORELLATO}{2025}
+{MORELLATO, C.~H.
+\textbf{A comunicação como potencializadora do acesso de pessoas com autismo
+  nos cursos de nível médio do Instituto Federal do Espírito Santo}.
+Disserta\c{c}\~{a}o (Dissertação (Mestrado Profissional em Educação)) ---
+  Universidade Federal da Bahia, Salvador, 2025.
+Dispon{\'\i}vel em:
+  \url{https://repositorio.ufba.br/bitstream/ri/43811/1/Dissertacao-Mestrado-Carlos-Henrique-Morellato-MPED.pdf}.
+  Acesso em: 18 out. 2026.}
 
 \bibitem[MPEDUC 2025]{mpeduc2025}
 \abntrefinfo{MPEDUC}{MPEDUC}{2025}
@@ -148,6 +196,15 @@ Dispon{\'\i}vel em:
   fundamental.
 \textbf{Inter-Ação}, v.~50, n.~3, p.~1030, 2025.}
 
+\bibitem[TABORA 2026]{tabora2026systematic}
+\abntrefinfo{TABORA}{TABORA}{2026}
+{TABORA, L.~A. A systematic review of user interface color schemes in
+  instructional design across learning management systems. In:  \textbf{DLSU
+  Senior High School Research Congress}. Manila: De La Salle University, 2026.
+  Dispon{\'\i}vel em:
+  \url{https://animorepository.dlsu.edu.ph/conf\_shsrescon/2026/BoA\_CLI/11/}.
+  Acesso em: 18 out. 2026.}
+
 \bibitem[VAZ 2026]{engaja2026}
 \abntrefinfo{VAZ}{VAZ}{2026}
 {VAZ, B. \textbf{Engaja+: Uma Plataforma Baseada em LLM para Apoio a
@@ -160,5 +217,13 @@ Dispon{\'\i}vel em: \url{https://zenodo.org/records/19583223}. Acesso em: 21
 {VÍNCULOO. \textbf{Vínculoo®: Plataforma de educação especial e
   inclusiva}. 2019.
 Dispon{\'\i}vel em: \url{https://vinculoo.com.br/}. Acesso em: 23 set. 2026.}
+
+\bibitem[WILEY e SWIRCZYNSKI 2025]{wiley2025notice}
+\abntrefinfo{WILEY e SWIRCZYNSKI}{WILEY; SWIRCZYNSKI}{2025}
+{WILEY, K.; SWIRCZYNSKI, B. I notice, i wonder, i think: Analyzing interior
+  spaces to support neurodiversity. In:  \textbf{LearningScapes 2025}. A4LE,
+  2025. Dispon{\'\i}vel em:
+  \url{https://learningscapes2025.a4le.org/pdf/NoticeWonderThink.pdf}. Acesso
+  em: 18 out. 2026.}
 
 \end{thebibliography}

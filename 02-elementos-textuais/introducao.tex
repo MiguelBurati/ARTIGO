@@ -4,16 +4,50 @@
 \chapter{INTRODUÇÃO}\label{chap:introducao}
 
 
-Os Trabalhos de Conclusão de Curso (TCC) são documentos que
-representam o resultado de estudo, devendo expressar conhecimento do assunto escolhido. Deve ser emanado da disciplina, módulo, estudo independente, curso, programa e outros ministrados. Deve ser feito sob a coordenação de um orientador.
-A norma que determina os trabalhos com esse fim é a NBR 14724. Nesse documento será usada documentação o ABNTEX disponivel no site \href{https://code.google.com/p/abntex2/}{https://code.google.com/p/abntex2/} .
+A educação inclusiva é um dos desafios enfrentados pelo sistema educacional brasileiro, principalmente quando se trata de garantir condições adequadas de aprendizagem para estudantes com deficiência intelectual e outras necessidades educacionais específicas. Embora a legislação brasileira assegure o direito à educação inclusiva, colocando esse direito em prática exige mais do que a matrícula dos estudantes nas escolas. A Lei Brasileira de Inclusão da Pessoa com Deficiência, instituída pela Lei nº 13.146/2015, estabelece diretrizes para garantir o acesso, a permanência, a participação e a aprendizagem das pessoas com deficiência no ambiente escolar \cite{brasil2015lbi}. No entanto, é necessário oferecer materiais pedagógicos adaptados, estratégias de ensino adequadas e acompanhamento individualizado, respeitando as características e necessidades de cada aluno.
+
+Mesmo com os avanços na legislação, muitas escolas públicas ainda enfrentam dificuldades para oferecer um ensino inclusivo. A falta de materiais adaptados, a formação insuficiente dos professores, a escassez de profissionais especializados e a sobrecarga de trabalho são alguns dos obstáculos encontrados no ambiente escolar. \citeonline{souza2025acessibilidade} apontam que a falta de suporte institucional e as dificuldades enfrentadas pelos docentes prejudicam o acesso ao conhecimento de estudantes com deficiência intelectual no ensino fundamental. Isso mostra que garantir a presença do aluno na sala de aula não significa, necessariamente, oferecer condições adequadas para sua aprendizagem.
+
+Diante desse cenário, a utilização de tecnologias digitais pode ajudar os professores a lidar com parte dessas dificuldades. Entre essas tecnologias, a Inteligência Artificial (IA) tem apresentado possibilidades de aplicação na educação, principalmente na criação e adaptação de conteúdos. A Inteligência Artificial Generativa permite produzir textos, exercícios e outros materiais a partir de orientações fornecidas pelo usuário. \citeonline{engaja2026} aborda a utilização de modelos de linguagem como ferramentas de apoio aos professores no ensino inclusivo, mostrando possibilidades de aplicação dessa tecnologia na elaboração de recursos educacionais.
+
+Apesar dessas possibilidades, a utilização da Inteligência Artificial na educação exige cuidados. Os conteúdos gerados podem apresentar erros, informações inadequadas ou atividades que não correspondam às necessidades dos alunos. Por esse motivo, a tecnologia deve funcionar como uma ferramenta de apoio, mantendo o professor responsável pela avaliação e adaptação dos materiais antes de utilizá-los em sala de aula. Dessa maneira, é possível aproveitar os recursos oferecidos pela IA sem substituir o conhecimento e a experiência do profissional da educação.
+
+Para auxiliar os professores na preparação de atividades adaptadas, foi desenvolvido o IncluiEdu, um sistema web voltado ao ensino fundamental que utiliza Inteligência Artificial Generativa na criação de materiais pedagógicos personalizados para estudantes neurodivergentes. A plataforma permite cadastrar turmas e alunos, registrar observações pedagógicas, acompanhar o desenvolvimento dos estudantes e gerar atividades de acordo com suas necessidades. Os conteúdos produzidos pela IA são armazenados inicialmente como rascunhos, permitindo que o professor faça as alterações necessárias antes de utilizá-los.
+
+O IncluiEdu foi desenvolvido com a proposta de facilitar a organização das informações pedagógicas e apoiar a elaboração de atividades adaptadas. A ferramenta busca oferecer aos professores uma alternativa para o planejamento de materiais personalizados, especialmente em situações nas quais o tempo e os recursos disponíveis são limitados. A decisão sobre a utilização das atividades permanece sob responsabilidade do docente, que pode avaliar os conteúdos e adequá-los às necessidades de cada estudante.
 
 \section{PROBLEMA}
 
+A problemática central deste trabalho reside na lacuna entre o direito garantido por lei e a realidade prática do professor do ensino fundamental na rede pública. Em uma mesma turma, o docente pode trabalhar com crianças que apresentam ritmos de aprendizagem, dificuldades cognitivas e níveis de autonomia distintos (perfis neurodivergentes). Para atender a essas diferenças, é imprescindível preparar atividades e utilizar estratégias que considerem as particularidades de cada aluno.
+
+Contudo, conforme destacam \citeonline{oliveira2025escolas}, a ausência de materiais pedagógicos adequados e de formação continuada está entre as principais dificuldades enfrentadas pelas escolas regulares na implementação da educação inclusiva. O tempo disponível para o planejamento das aulas e a falta de recursos dificultam esse processo de individualização do ensino.
+
+Nesse contexto, embora a Inteligência Artificial Generativa se apresente como uma alternativa promissora para a criação de conteúdos, o uso dessas ferramentas exige cautela. Os conteúdos gerados podem conter erros ou não se alinhar às necessidades específicas do estudante.
+
+Diante disso, o problema que este trabalho se propõe a responder é: Como apoiar o professor do ensino fundamental na criação de atividades pedagógicas adaptadas para alunos neurodivergentes, de forma a reduzir sua sobrecarga de trabalho, mas garantindo que o docente mantenha o controle pedagógico e a validação ética dos materiais gerados?
+
 \section{OBJETIVOS}
+
 \subsection{OBJETIVO GERAL}
+Desenvolver o IncluiEdu, um sistema web fundamentado em Inteligência Artificial Generativa, destinado a apoiar professores do ensino fundamental na criação de atividades pedagógicas adaptadas para alunos neurodivergentes, de modo a otimizar o tempo de planejamento docente e assegurar que a validação pedagógica e ética dos materiais permaneça sob controle do professor.
 \subsection{OBJETIVOS ESPECÍFICOS}
+
+\begin{itemize}
+    \item Identificar, por meio da literatura, os principais desafios enfrentados por professores do ensino fundamental público na criação de atividades adaptadas para alunos neurodivergentes.
+    \item Definir os requisitos funcionais e não funcionais do sistema, com foco na segurança dos dados (LGPD) e no controle de acesso aos registros pedagógicos.
+    \item Projetar a arquitetura e o modelo de banco de dados relacional para o armazenamento de turmas, alunos e histórico de observações pedagógicas.
+    \item Desenvolver uma interface web inclusiva, aplicando princípios de neuroinclusão, como a paleta de cores pastéis e a sinalização cromática (badges), para a redução da carga cognitiva do professor.
+    \item Implementar a integração com a Inteligência Artificial Generativa (via Cloudflare Workers AI) para a criação de atividades pedagógicas personalizadas.
+    \item Estabelecer um mecanismo de segurança pedagógica no qual as atividades geradas pela IA sejam armazenadas obrigatoriamente como rascunhos, exigindo a revisão e validação final do professor.
+    \item Validar o sistema por meio de testes manuais de usabilidade e funcionamento dos fluxos de cadastro, acompanhamento e geração de conteúdo.
+\end{itemize}
+
 \section{JUSTIFICATIVA}
 
+A relevância deste trabalho fundamenta-se em três pilares principais: a urgência da inclusão educacional no Brasil, a necessidade de uso ético da Inteligência Artificial na educação e a redução da sobrecarga do trabalho docente.
 
+No âmbito social e educacional, os dados do Censo Escolar de 2025 revelam que aproximadamente 2,4 milhões de estudantes com alguma deficiência estão matriculados na educação básica, sendo a deficiência intelectual a categoria mais numerosa \cite{inep2025censo}. Contudo, a realidade das escolas públicas demonstra uma lacuna entre o direito garantido pela Lei Brasileira de Inclusão \cite{brasil2015lbi} e a prática pedagógica. Apenas 6,4\% dos professores regentes possuem formação continuada em Educação Especial \cite{irm2026panorama}, o que, somado à falta de materiais adaptados, resulta em uma inclusão que muitas vezes se limita à socialização do aluno, sem garantir a aprendizagem efetiva \cite{oliveira2025escolas}. 
 
+No âmbito tecnológico, a Inteligência Artificial Generativa tem se destacado como uma ferramenta promissora para a criação de conteúdo. No entanto, seu uso na educação exige cautela, pois os modelos de linguagem podem apresentar erros ou vieses. Este trabalho justifica-se por propor uma aplicação da IA pautada na ética e na segurança pedagógica \cite{engaja2026}. O diferencial do IncluiEdu é manter o professor no centro do processo decisório, por meio do sistema de ``rascunhos'', onde a IA atua como copiloto na elaboração de atividades, mas a validação humana é obrigatória. Além disso, o sistema inova ao aplicar princípios de design neuroinclusivo \cite{bertoletti2026light,kozybayev2026cognitive} na interface do docente, reduzindo a fadiga visual e a carga cognitiva.
+
+Por fim, no âmbito prático e acadêmico, o IncluiEdu justifica-se por otimizar o tempo de planejamento do professor. Ao automatizar a criação de atividades adaptadas com base nas observações pedagógicas do próprio docente, o sistema mitiga o problema da sobrecarga de trabalho, democratizando o acesso a materiais personalizados e contribuindo diretamente para uma educação mais equitativa e verdadeiramente inclusiva.

@@ -9,6 +9,9 @@
 \usepackage{listings}    % Ambientes de código
 \usepackage{tocloft}     % Personalização das listas
 \usepackage{chngcntr}    % Necessário para \counterwithin
+\usepackage{subcaption}  % Para agrupar figuras
+\usepackage{hyperref}
+
 
 % -------------------------------
 % Configuração de listagens
@@ -69,3 +72,12 @@
 
 \localapresentacao{Ourinhos -- São Paulo}
 \anoapresentacao{2026}
+
+\hypersetup{
+    colorlinks=true,       % Muda a cor do texto em vez de colocar uma caixa em volta
+    linkcolor=blue,        % Cor dos links internos (figuras, seções, tabelas)
+    citecolor=blue,        % Cor das citações (vai direto para a bibliografia)
+    urlcolor=blue,         % Cor dos links da internet (Figma, Cloudflare, etc.)
+    bookmarksnumbered=true,% Adiciona numeração nos favoritos do PDF (ex: 1 Introdução)
+    pdfstartview=FitH      % Abre o PDF ajustando a largura da página
+}

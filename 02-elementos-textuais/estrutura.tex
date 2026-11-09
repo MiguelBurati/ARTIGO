@@ -4,25 +4,78 @@
 
 \chapter{RESULTADOS}
 
-A estrutura de acordo com a NBR-14724, compreende três elementos: pré-textuais, tex-tuais e pós-textuais.
+Os resultados do sistema IncluiEdu demonstram a viabilidade da integração entre a Inteligência Artificial Generativa e o design inclusivo. As telas reais do sistema, implementadas na Cloudflare, comprovam a aplicação prática dos requisitos levantados na metodologia.
+
+\section{VISÃO GERAL E ORGANIZAÇÃO DO PROFESSOR}
+
+A interface do IncluiEdu foi projetada para oferecer ao docente uma visão clara e organizada de suas responsabilidades. A \autoref{fig:painel_inicial} apresenta o painel inicial do sistema, onde o professor tem acesso rápido às principais funcionalidades.
 
 \begin{figure}[H]
-	\vspace*{0,2cm}
     \centering
-    \caption{Ilustração da estrutura}
-    \includegraphics[width=0.6\textwidth]{./04-figuras/abnt}
-    \label{fig:ilustfig2}
+    \caption{Tela Inicial do Sistema IncluiEdu}
+    \includegraphics[width=0.9\textwidth]{04-figuras/painel_inicial.png}
+    \label{fig:painel_inicial}
+    \fonte{Elaborado pelos autores (2026).}
 \end{figure}
-\vspace*{-0,9cm}
-{\raggedright \fonte{Disponível em: <https://www.intelligentsia.zip.net/estruturamonografia>. Acesso em: 15 ago. 2014.}}\\
+
+Observa-se na \autoref{fig:painel_inicial} a aplicação da paleta de cores pastéis, que, conforme discutido na \autoref{sec:interface_carga_cognitiva}, visa reduzir a fadiga visual e a sobrecarga sensorial. A organização limpa da interface atua como um facilitador cognitivo, permitindo que o professor localize rapidamente as ferramentas de que precisa.
+
+Na \autoref{fig:turmas_alunos}, é apresentada a tela de visão geral de turmas. 
+
+\begin{figure}[H]
+    \centering
+    \caption{Tela de Visão Geral de Turmas}
+    \includegraphics[width=0.9\textwidth]{04-figuras/turmas_alunos.png}
+    \label{fig:turmas_alunos}
+    \fonte{Elaborado pelos autores (2026).}
+\end{figure}
+
+Esta tela (\autoref{fig:turmas_alunos}) permite ao professor gerenciar múltiplos alunos distribuídos em diferentes turmas. A disposição das informações foi pensada para mitigar o problema da sobrecarga docente, apontado por \citeonline{oliveira2025escolas}, ao centralizar o acompanhamento sem a necessidade de navegar por diversas abas ou planilhas externas.
+
+\section{O FLUXO DE GERAÇÃO DE ATIVIDADES PELA INTELIFÊNCIA ARTIFICIAL}
+
+As Figuras \ref{fig:gerar_atividade} e \ref{fig:atv_gerada} apresentam o fluxo central do sistema: a solicitação do professor e a resposta gerada pela IA.
+
+\begin{figure}[H]
+    \caption{Fluxo de criação de atividade com Inteligência Artificial}
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{04-figuras/gerar_atividade.png}
+        \caption{Interface de solicitação de atividade}
+        \label{fig:gerar_atividade}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{04-figuras/atv_gerada.png}
+        \caption{Atividade gerada com status de rascunho}
+        \label{fig:atv_gerada}
+    \end{subfigure}
+    \label{fig:atv_gerada}
+    \fonte{Elaborado pelos autores (2026).}
+\end{figure}
+
+Observa-se na Figura \ref{fig:gerar_atividade} que o professor insere o tópico desejado (no exemplo, comunicação básica e emoções) e a duração da atividade, sem inserir dados sensíveis do aluno. A Figura \ref{fig:atv_gerada} mostra o retorno da IA, que gerou uma atividade lúdica intitulada ``O Semáforo das Emoções e Quantidades''. Nota-se a aplicação prática da barreira de segurança pedagógica discutida na \autoref{sec:professor_controle}: o sistema destaca a tag ``Gerada por IA - Rascunho para revisão'', garantindo que o professor avalie o conteúdo antes de aplicá-lo ao aluno.
+
+\section{ORGANIZAÇÃO VISUAL E SINALIZAÇÃO CROMÁTICA}
+
+A Figura \ref{fig:acompanhamento_aluno} ilustra a tela de acompanhamento individual do aluno, onde são aplicados os conceitos de design inclusivo.
+
+\begin{figure}[H]
+    \centering
+    \caption{Tela de Acompanhamento do Aluno}
+    \includegraphics[width=0.8\textwidth]{04-figuras/acompanhamento_aluno.png}
+    \label{fig:acompanhamento_aluno}
+    \fonte{Elaborado pelos autores (2026).}
+\end{figure}
+
+Conforme observado na Figura \ref{fig:acompanhamento_aluno}, a interface utiliza uma paleta de cores pastéis e \textit{badges} de sinalização cromática para indicar a situação do estudante. Como fundamentado na \autoref{sec:interface_carga_cognitiva}, essa escolha visual não é meramente estética, mas atua como um filtro cognitivo, permitindo que o professor identifique alunos que necessitam de maior atenção sem sobrecarregar seu processamento visual.
 
 
 \chapter{CONCLUSÃO}
 Os Trabalhos de Conclusão de Curso (TCC) são documentos que
 representam o resultado de estudo, devendo expressar conhecimento do assunto escolhido. Deve ser emanado da disciplina, módulo, estudo independente, curso, programa e outros ministrados. Deve ser feito sob a coordenação de um orientador.
 A norma que determina os trabalhos com esse fim é a NBR 14724. Nesse documento será usada documentação o ABNTEX disponivel no site
+
 \chapter{AGRADECIMENTOS}
-
-
-
-

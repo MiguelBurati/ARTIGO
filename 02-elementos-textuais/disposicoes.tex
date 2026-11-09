@@ -4,7 +4,7 @@
 
 \chapter{MATERIAIS E MÉTODOS}
 
-\section{Materiais e ambiente de desenvolvimento}
+\section{MATERIAIS E AMBIENTE DE DESENVOLVIMENTO}
 
 O desenvolvimento do IncluiEdu envolveu duas configurações tecnológicas. Na etapa inicial, executada localmente, foram utilizados Python e Django para a aplicação, SQLite para armazenamento e Ollama para integração com inteligência artificial. Posteriormente, a versão atual passou a utilizar JavaScript e TypeScript, com backend em Cloudflare Workers, banco relacional Cloudflare D1 e geração de atividades por meio do Workers AI, com o modelo Gemma \cite{cloudflare2026workersai,cloudflare2026gemma,cloudflare2026d1}.
 
@@ -12,13 +12,13 @@ A interface web utiliza HTML, CSS e JavaScript para apresentar os recursos ao pr
 
 A arquitetura atual utiliza serviços da Cloudflare para executar o backend, armazenar os registros e integrar a geração de atividades com inteligência artificial. O Cloudflare Workers processa as requisições da aplicação, o Cloudflare D1 mantém os dados relacionais e o Workers AI disponibiliza o modelo Gemma para a elaboração das propostas pedagógicas \cite{cloudflare2026workersai,cloudflare2026gemma,cloudflare2026d1}.
 
-\section{Metodologia de desenvolvimento}
+\section{METODOLOGIA DE DESENVOLVIMENTO}
 
 O desenvolvimento do IncluiEdu foi organizado em etapas, iniciadas pela definição das funcionalidades pedagógicas e pela modelagem das informações. Na primeira fase, a aplicação foi executada localmente com Django, SQLite e Ollama. Posteriormente, foi desenvolvida a versão atual, publicada na Cloudflare, com JavaScript, TypeScript, D1 e Workers AI. Ao longo do desenvolvimento, foram realizadas verificações manuais das funcionalidades.
 
 A definição das funcionalidades considerou a necessidade de organizar turmas e alunos, registrar observações pedagógicas e apoiar o professor na elaboração de atividades personalizadas. Após a definição dos requisitos, foram elaborados modelos do sistema e implementados os recursos de autenticação, controle de acesso, acompanhamento e integração com a IA. A validação foi conduzida por verificações manuais da aplicação.
 
-\section{Requisitos do sistema}
+\section{REQUISITOS DO SISTEMA}
 
 Os requisitos funcionais foram definidos com foco nas ações do professor e na proteção dos registros pedagógicos, conforme o Quadro~\ref{qua:requisitos-funcionais}.
 
@@ -82,7 +82,7 @@ RNF04 & RNF04	A comunicação entre a interface e o backend deve utilizar requis
 \fonte{Elaborado pelos autores (2026).}
 \end{quadro}
 
-\section{Modelagem do Sistenma}
+\section{MODELAGEM DO SISTEMA}
 
 A modelagem do sistema representa as interações do professor com a plataforma e as entidades relacionadas ao acompanhamento pedagógico. Os diagramas de casos de uso e de classes apresentam, respectivamente, as funcionalidades disponíveis e a organização dos elementos do sistema.
 
@@ -125,6 +125,10 @@ A estrutura do D1 é criada por migrações SQL, que documentam as tabelas e seu
     \fonte{Elaborado pelos autores (2026).}
 \end{figure}
 
+\subsection{PROTOTIPAGEM DA INTERFACE}
+
+A prototipagem da interface foi realizada na plataforma Figma, com o objetivo de validar o layout e a aplicação da paleta de cores pastéis antes da implementação do código. O design do protótipo seguiu as diretrizes de redução de carga cognitiva e neuroinclusão. O protótipo navegável pode ser acessado no link: \url{https://www.figma.com/design/0n7698ffb7L2pfsIGNib1s/unclui-edu?t=6rZgq6J0BXTKyi2U-1}.
+
 \section{IMPLEMENTAÇÃO DO SISTEMA}
 
 Na versão atual do IncluiEdu, a interface web apresenta as telas de cadastro, consulta e acompanhamento dos alunos. As ações realizadas pelo professor são enviadas à API por meio de requisições \texttt{fetch}, utilizando dados em formato JSON. O Cloudflare Worker recebe essas requisições, verifica a sessão e as permissões do usuário e realiza as operações necessárias no banco de dados D1. Em seguida, a resposta é enviada à interface, permitindo a atualização das informações apresentadas.
@@ -137,12 +141,12 @@ No acompanhamento pedagógico, cada registro reúne informações sobre o aluno,
 
 A verificação das funcionalidades do IncluiEdu foi realizada manualmente, por meio da interação com a aplicação. Os cenários de teste abrangem autenticação, organização de turmas, cadastro e consulta de alunos, observações pedagógicas, atualização da situação do aluno, geração de atividades e controle de acesso. Os procedimentos estão relacionados aos requisitos funcionais do sistema, conforme o Quadro~\ref{qua:testes}.
 
-\begin{quadro}[htb]
+\begin{quadro}[H]
 \centering
 \caption{Cenários de teste e resultados observados}
 \label{qua:testes}
 \small
-\begin{tabular}{|p{2.5cm}|p{6cm}|p{5.5cm}|}
+\begin{tabular}{|p{2cm}|p{7cm}|p{6cm}|}
 \hline
 \textbf{Cenário} & \textbf{Procedimento realizado} & \textbf{Resultado} \\
 \hline
@@ -150,7 +154,7 @@ Autenticação & Realização de login com credenciais válidas e inválidas. & 
 \hline
 Turmas e alunos & Cadastro de turma e aluno, seleção de turma e pesquisa de aluno pelo nome. & As informações cadastradas foram exibidas corretamente, permitindo selecionar turmas e localizar alunos. \\
 \hline
-Acompanhamento & Abertura do acompanhamento individual de um aluno. & O sistema apresentou as informações do aluno, incluindo sua situação atual, registros pedagógicos e atividades salvas. \\
+Acompanha- mento & Abertura do acompanhamento individual de um aluno. & O sistema apresentou as informações do aluno, incluindo sua situação atual, registros pedagógicos e atividades salvas. \\
 \hline
 Registro pedagógico & Preenchimento dos campos de área, habilidade, nível de autonomia e evidência observada, seguido do salvamento. & O registro foi armazenado e disponibilizado para consulta no histórico pedagógico do aluno. \\
 \hline
@@ -160,7 +164,7 @@ Inteligência Artificial & Solicitação de uma atividade pedagógica personaliz
 \hline
 Geração de imagem & Utilização da opção de gerar imagem para uma atividade produzida pela IA. & O sistema gerou uma imagem relacionada à atividade pedagógica solicitada, disponibilizando o resultado para utilização pelo professor. \\
 \hline
-Encerramento de sessão & Utilização da opção \textit{Sair} após autenticação. & A sessão foi encerrada, retornando o usuário à área de autenticação. \\
+Encerra- mento de sessão & Utilização da opção \textit{Sair} após autenticação. & A sessão foi encerrada, retornando o usuário à área de autenticação. \\
 \hline
 Controle de acesso & Tentativa de consultar registros de outro professor utilizando uma conta diferente. & O sistema impediu o acesso aos registros vinculados ao outro professor. \\
 \hline
