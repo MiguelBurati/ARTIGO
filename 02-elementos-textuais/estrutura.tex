@@ -52,11 +52,11 @@ As Figuras \ref{fig:gerar_atividade} e \ref{fig:atv_gerada} apresentam o fluxo c
         \caption{Atividade gerada com status de rascunho}
         \label{fig:atv_gerada}
     \end{subfigure}
-    \label{fig:atv_gerada}
+    \label{fig:fluxo-geracao}
     \fonte{Elaborado pelos autores (2026).}
 \end{figure}
 
-Observa-se na Figura \ref{fig:gerar_atividade} que o professor insere o tópico desejado (no exemplo, comunicação básica e emoções) e a duração da atividade, sem inserir dados sensíveis do aluno. A Figura \ref{fig:atv_gerada} mostra o retorno da IA, que gerou uma atividade lúdica intitulada ``O Semáforo das Emoções e Quantidades''. Nota-se a aplicação prática da barreira de segurança pedagógica discutida na \autoref{sec:professor_controle}: o sistema destaca a tag ``Gerada por IA - Rascunho para revisão'', garantindo que o professor avalie o conteúdo antes de aplicá-lo ao aluno.
+Observa-se na Figura \ref{fig:gerar_atividade} que o professor insere o tópico desejado (no exemplo, comunicação básica e emoções) e a duração da atividade, sem inserir dados sensíveis do aluno. A Figura \ref{fig:atv_gerada} mostra o retorno da IA, que gerou uma atividade lúdica intitulada ``O Semáforo das Emoções e Quantidades''. Nota-se a aplicação prática da barreira de segurança pedagógica discutida na \autoref{ia_generativa_apoio}: o sistema destaca a tag ``Gerada por IA - Rascunho para revisão'', garantindo que o professor avalie o conteúdo antes de aplicá-lo ao aluno.
 
 \section{ORGANIZAÇÃO VISUAL E SINALIZAÇÃO CROMÁTICA}
 
@@ -74,8 +74,17 @@ Conforme observado na Figura \ref{fig:acompanhamento_aluno}, a interface utiliza
 
 
 \chapter{CONCLUSÃO}
-Os Trabalhos de Conclusão de Curso (TCC) são documentos que
-representam o resultado de estudo, devendo expressar conhecimento do assunto escolhido. Deve ser emanado da disciplina, módulo, estudo independente, curso, programa e outros ministrados. Deve ser feito sob a coordenação de um orientador.
-A norma que determina os trabalhos com esse fim é a NBR 14724. Nesse documento será usada documentação o ABNTEX disponivel no site
 
-\chapter{AGRADECIMENTOS}
+Este trabalho respondeu à pergunta de pesquisa, como apoiar o professor do ensino fundamental na criação de atividades adaptadas para alunos neurodivergentes sem retirar seu controle pedagógico e ético, por meio do desenvolvimento do IncluiEdu, sistema web que usa IA Generativa como apoio à decisão docente, e não como substituto do professor.
+
+Quanto aos objetivos, todos foram alcançados, com exceção da validação com professores. A identificação dos desafios docentes foi feita no \autoref{chap:fundamentacao}, com base na literatura sobre formação insuficiente e precariedade de recursos. Os requisitos, a arquitetura e o modelo de banco de dados foram definidos e materializados nos diagramas da \autoref{sec:modelagem-sistema}. A interface neuroinclusiva foi implementada e comprovada nos resultados, com paleta pastel e sinalização cromática, conforme a \autoref{sec:interface_carga_cognitiva}. A integração com a IA Generativa via Cloudflare Workers AI é demonstrada na \autoref{fig:fluxo-geracao}. O mecanismo de segurança pedagógica, atividades sempre salvas como rascunho, exigindo revisão do professor, foi implementado e constitui o diferencial ético do sistema. Por fim, a validação por testes manuais confirmou o funcionamento dos fluxos de cadastro, acompanhamento e geração na \autoref{sec:testes-validacao}, mas não envolveu professores reais, o que se configura como limitação.
+
+Conclui-se que o IncluiEdu responde à pergunta de pesquisa de forma viável: reduz parte da sobrecarga de planejamento ao gerar rascunhos de atividades adaptadas, preservando a autonomia e a responsabilidade ética do educador. Trata-se, contudo, de uma contribuição inicial, cujas limitações e desdobramentos seguem abaixo.
+
+\section{LIMITAÇÕES}
+
+A principal limitação é a ausência de avaliação com professores em contexto real: a validação foi apenas técnica e manual, sem aplicação com docentes nem avaliação de usabilidade com o público-alvo. Além disso, a qualidade pedagógica das atividades geradas não foi medida de forma sistemática, sendo tratada apenas pela revisão humana. Há também os riscos de alucinação da IA Generativa, mitigados pela validação docente, mas sem filtros automáticos de consistência. Por fim, o sistema armazena dados sensíveis de alunos : embora a persistência seja realizada no banco de dados Cloudflare D1, cuja segurança é de responsabilidade da infraestrutura do provedor, não foi realizada auditoria formal de conformidade com a LGPD nem verificação independente das políticas de segurança e privacidade da Cloudflare. A validação também se restringiu a testes manuais, sem testes automatizados ou de segurança.
+
+\section{TRABALHOS FUTUROS}
+
+Como desdobramentos, propõe-se: avaliar o sistema com professores reais, mensurando a redução da sobrecarga, desenvolver instrumentos, com especialistas, para medir a qualidade pedagógica das atividades, aprimorar o mecanismo de filtros para a mitigação de alucionações da IA, políticas de tratamento dos dados dos alunos, incorporar testes automatizados e de segurança, ampliar mecanismos internos do sistema para melhor atender os professores e pais.

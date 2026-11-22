@@ -5,6 +5,19 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[AMORIM e LUSTOSA 2023]{amorim2023escassez}
+\abntrefinfo{AMORIM e LUSTOSA}{AMORIM; LUSTOSA}{2023}
+{AMORIM, M.~L.; LUSTOSA, A. V.~M. Escassez de profissionais especializados e
+  sobrecarga docente na educa{\c c}{\~a}o especial.
+\textbf{Revista Brasileira de Educa{\c c}{\~a}o Especial}, 2023.}
+
+\bibitem[BECKER et al. 2026]{becker2026necessidades}
+\abntrefinfo{BECKER et al.}{BECKER et al.}{2026}
+{BECKER, M.~M.; ABREU, C. P.~C.; SOUZA, A. P.~G.; REALI, A. M.~R. Necessidades
+  formativas docentes no processo de inclus{\~a}o escolar no ensino
+  fundamental.
+\textbf{Revista Educa{\c c}{\~a}o}, 2026.}
+
 \bibitem[BERTOLETTI e ROSSI 2026]{bertoletti2026light}
 \abntrefinfo{BERTOLETTI e ROSSI}{BERTOLETTI; ROSSI}{2026}
 {BERTOLETTI, P.; ROSSI, M. Light and color in low-arousal design: a review
@@ -13,6 +26,12 @@
 Dispon{\'\i}vel em:
   \url{https://www.sciencedirect.com/science/article/pii/S2949678026000401}.
   Acesso em: 18 out. 2026.}
+
+\bibitem[BILLINGSLEY e BETTINI 2019]{billingsley2019attrition}
+\abntrefinfo{BILLINGSLEY e BETTINI}{BILLINGSLEY; BETTINI}{2019}
+{BILLINGSLEY, B.; BETTINI, E. Special education teacher attrition and
+  retention: A review of the literature.
+\textbf{Review of Educational Research}, v.~89, n.~5, p. 697--744, 2019.}
 
 \bibitem[BRASIL 2015]{brasil2015lbi}
 \abntrefinfo{BRASIL}{BRASIL}{2015}
@@ -33,6 +52,12 @@ Institui a Política Nacional de Educação Especial: Equitativa, Inclusiva e
 {BRASIL. \textbf{Decreto nº 11.370, de 1º de janeiro de 2023}. Brasília, DF:
   Presidência da República, 2023.
 Revoga o Decreto nº 10.502, de 30 de setembro de 2020.}
+
+\bibitem[BRUNSTING et al. 2026]{brunsting2026burnout}
+\abntrefinfo{BRUNSTING et al.}{BRUNSTING et al.}{2026}
+{BRUNSTING, N.~C.; MORIN, L.~E.; G{\'O}MEZ, L.~R. Burnout and occupational
+  wellbeing of special education teachers: Recent research synthesized.
+\textbf{Review of Educational Research}, 2026.}
 
 \bibitem[CLOUDFLARE 2026]{cloudflare2026d1}
 \abntrefinfo{CLOUDFLARE}{CLOUDFLARE}{2026a}
@@ -81,6 +106,13 @@ Dispon{\'\i}vel em:
   \url{https://revistaforum.com.br/opiniao/falta-de-investimento-expoe-sucateamento-da-educacao-especial-inclusiva-no-df/}.
   Acesso em: 21 set. 2026.}
 
+\bibitem[HUANG 2025]{huang2025web}
+\abntrefinfo{HUANG}{HUANG}{2025}
+{HUANG, Z. Web accessibility design using color psychology for visual
+  impairments and neurodivergent conditions. In:  \textbf{Proceedings of the
+  2025 3rd International Conference on Image}. Dordrecht: Atlantis Press,
+  2025.}
+
 \bibitem[IMAS et al. 2026]{imas2026role}
 \abntrefinfo{IMAS et al.}{IMAS et al.}{2026}
 {IMAS, M.; EMBONG, A.~H.; MOKHTAR, W. K. A.~W.; IBRAHIM, A.; ZULKPLI, R.~A. The
@@ -112,16 +144,6 @@ Dispon{\'\i}vel em: \url{https://www.inklua.com/}. Acesso em: 23 set. 2026.}
 Dispon{\'\i}vel em: \url{https://zenodo.org/records/19608847}. Acesso em: 18
   out. 2026.}
 
-\bibitem[LI et al. 2026]{li2026motion}
-\abntrefinfo{LI et al.}{LI et al.}{2026}
-{LI, Z.; COSTA, A.; CEYHAN, P.; CRUICKSHANK, L.
-\textbf{Motion graphics as an educational tool that supports learning English
-  vocabulary by Chinese students}.
-Tese (Tese de Doutorado) --- Lancaster University, Lancaster, 2026.
-Dispon{\'\i}vel em:
-  \url{https://eprints.lancs.ac.uk/id/eprint/235573/1/2025lizijunphd.pdf}.
-  Acesso em: 18 out. 2026.}
-
 \bibitem[LIEVORE e MELO 2025]{lievore2025financiamento}
 \abntrefinfo{LIEVORE e MELO}{LIEVORE; MELO}{2025}
 {LIEVORE, P. T.~M.; MELO, D. C. F.~d. Financiamento da educação especial: um
@@ -135,6 +157,12 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \url{https://educacaointegral.org.br/reportagens/educacao-especial-inclusao-cresce-no-brasil-mas-desafios-persistem/}.
   Acesso em: 21 set. 2026.}
+
+\bibitem[MAYER e MORENO 2005]{mayer2005signaling}
+\abntrefinfo{MAYER e MORENO}{MAYER; MORENO}{2005}
+{MAYER, R.~E.; MORENO, R. A signaling principle for the design of multimedia
+  instruction.
+\textbf{Educational Psychologist}, v.~40, n.~3, p. 169--178, 2005.}
 
 \bibitem[MENDES 2026]{irm2026panorama}
 \abntrefinfo{MENDES}{MENDES}{2026}
@@ -195,6 +223,11 @@ Dispon{\'\i}vel em:
   de inclusão de estudantes com deficiência intelectual no ensino
   fundamental.
 \textbf{Inter-Ação}, v.~50, n.~3, p.~1030, 2025.}
+
+\bibitem[SWELLER 1988]{sweller1988cognitive}
+\abntrefinfo{SWELLER}{SWELLER}{1988}
+{SWELLER, J. Cognitive load during problem solving: Effects on learning.
+\textbf{Cognitive Science}, v.~12, n.~2, p. 257--285, 1988.}
 
 \bibitem[TABORA 2026]{tabora2026systematic}
 \abntrefinfo{TABORA}{TABORA}{2026}

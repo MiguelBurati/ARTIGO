@@ -8,56 +8,32 @@
 \contentsline {section}{\numberline {1.2}OBJETIVOS}{8}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}OBJETIVO GERAL}{8}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}OBJETIVOS ESPECÍFICOS}{8}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}JUSTIFICATIVA}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.3}JUSTIFICATIVA}{9}{section.1.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{FUNDAMENTAÇÃO TEÓRICA}}{10}{chapter.2}%
 \contentsline {section}{\numberline {2.1}EDUCAÇÃO INCLUSIVA E DEFICIÊNCIA INTELECTUAL NO BRASIL}{10}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}BASE LEGAL}{10}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}CRESCIMENTO DAS MATRÍCULAS}{10}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}A LACUNA ENTRE A LEI E A PRÁTICA}{10}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}A DIFICULDADE ESPECÍFICA DO PROFESSOR}{11}{subsection.2.1.4}%
-\contentsline {section}{\numberline {2.2}DIFICULDADES ESTRUTURAIS E FINANCEIRAS DA ESCOLA PÚBLICA NO ENSINO DE ALUNOS COM DI}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}FALTA DE FORMAÇÃO CONTINUADA E AUSÊNCIA DE ICENTIVO FINANCEIRO}{12}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}PRECARIEDADE DE RECURSOS MATERIAIS E INFRAESTRUTRA}{12}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}FALTA DE PROFISSIONAIS ESPECIALIZADOS E SOBRECARGA DOCENTE}{13}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}A DEPÊNDENCIA DE RECURSOS EXTERNOS E A LÓGICA DO DESINVESTIMENTO}{13}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.2}DIFICULDADES ESTRUTURAIS E FINANCEIRAS DA ESCOLA PÚBLICA NO ENSINO DE ALUNOS COM DI}{12}{section.2.2}%
 \contentsline {section}{\numberline {2.3}INTELIGÊNCIA ARTIFICIAL GENERATIVA COMO FERRAMENTA DE APOIO AO PROFESSOR}{14}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}IA GENERATIVA E O PROBLEMA DA ESCOLA PÚBLICA}{14}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}O PROFESSOR NO CONTROLE: ATIVIDADE COMO RASCUNHO}{14}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}DESIGN DE INTERFACE INCLUSIVO E CARGA COGNITIVA}{15}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}O PAPEL DA COR NA INTERFACE DO PROFESSOR}{15}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}A CIÊNCIA DAS CORES PASTÉIS E A NEURODIVERGÊNCIA}{15}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}TEORIA DA CARGA COGNITIVA E A FUNÇÃO SINALIZADORA}{16}{subsection.2.4.3}%
 \contentsline {section}{\numberline {2.5}TRABALHOS CORRELATOS}{16}{section.2.5}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{MATERIAIS E MÉTODOS}}{19}{chapter.3}%
 \contentsline {section}{\numberline {3.1}MATERIAIS E AMBIENTE DE DESENVOLVIMENTO}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}METODOLOGIA DE DESENVOLVIMENTO}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.2}METODOLOGIA DE DESENVOLVIMENTO}{20}{section.3.2}%
 \contentsline {section}{\numberline {3.3}REQUISITOS DO SISTEMA}{20}{section.3.3}%
 \contentsline {section}{\numberline {3.4}MODELAGEM DO SISTEMA}{21}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}DIAGRAMA DE CASOS DE USO}{21}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}DIAGRAMA DE CLASSES}{21}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}MODELAGEM E IMPLEMENTAÇÃO DO BANCO DE DADOS}{22}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}PROTOTIPAGEM DA INTERFACE}{23}{subsection.3.4.4}%
 \contentsline {section}{\numberline {3.5}IMPLEMENTAÇÃO DO SISTEMA}{23}{section.3.5}%
 \contentsline {section}{\numberline {3.6}TESTES E VALIDAÇÃO}{24}{section.3.6}%
 \contentsline {section}{\numberline {3.7}IMPLANTAÇÃO E REPRODUTIBILIDADE}{25}{section.3.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{RESULTADOS}}{26}{chapter.4}%
-\contentsline {section}{\numberline {4.1}VISÃO GERAL E ORGANIZAÇÃO DO PROFESSOR}{26}{section.4.1}%
-\contentsline {section}{\numberline {4.2}O FLUXO DE GERAÇÃO DE ATIVIDADES PELA INTELIFÊNCIA ARTIFICIAL}{27}{section.4.2}%
-\contentsline {section}{\numberline {4.3}ORGANIZAÇÃO VISUAL E SINALIZAÇÃO CROMÁTICA}{28}{section.4.3}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{RESULTADOS}}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}VISÃO GERAL E ORGANIZAÇÃO DO PROFESSOR}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}O FLUXO DE GERAÇÃO DE ATIVIDADES PELA INTELIFÊNCIA ARTIFICIAL}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3}ORGANIZAÇÃO VISUAL E SINALIZAÇÃO CROMÁTICA}{29}{section.4.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{CONCLUSÃO}}{30}{chapter.5}%
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{AGRADECIMENTOS}}{31}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Citações (ABNT NBR 10520)}{32}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Citação direta curta (até 3 linhas)}{32}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Citação direta longa (mais de 3 linhas)}{32}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Citação indireta (paráfrase)}{32}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Citação de citação (apud)}{33}{subsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.1.5}Comandos úteis (abntex2cite)}{33}{subsection.6.1.5}%
-\contentsline {subsection}{\numberline {6.1.6}Observações finais}{33}{subsection.6.1.6}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{CONCLUSÃO}}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}LIMITAÇÕES}{31}{section.5.1}%
+\contentsline {section}{\numberline {5.2}TRABALHOS FUTUROS}{32}{section.5.2}%
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{34}{section*.16}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{33}{section*.16}%
 \vspace {\cftbeforechapterskip }

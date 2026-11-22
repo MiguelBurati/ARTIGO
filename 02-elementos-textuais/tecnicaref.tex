@@ -2,149 +2,47 @@
 % Documento: Tecnicas de referencia
 %
 
-\chapter{FUNDAMENTAÇÃO TEÓRICA}
+\chapter{FUNDAMENTAÇÃO TEÓRICA}\label{chap:fundamentacao}
+
+Este capítulo apresenta a fundamentação teórica que sustenta o desenvolvimento do IncluiEdu. Inicialmente, a \autoref{educ_inclusiva_di_brasil} discute a educação inclusiva e a deficiência intelectual no Brasil, abordando a base legal, o crescimento das matrículas, a lacuna entre a lei e a prática e a dificuldade específica do professor. Em seguida, a \autoref{dificuldades_estruturais} analisa as dificuldades estruturais e financeiras da escola pública no ensino de alunos com DI, incluindo a falta de formação continuada, a precariedade de recursos materiais, a ausência de profissionais especializados e a lógica do desinvestimento. A \autoref{ia_generativa_apoio} explora a Inteligência Artificial Generativa como ferramenta de apoio ao professor, destacando seu potencial e a importância do controle docente por meio do mecanismo de rascunhos. Na \autoref{sec:interface_carga_cognitiva}, discute-se o design de interface inclusivo e a carga cognitiva, com ênfase no papel das cores e na teoria da carga cognitiva. Por fim, a \autoref{trabalhos_correlatos} apresenta os trabalhos correlatos que embasam esta pesquisa.
 
 \section{EDUCAÇÃO INCLUSIVA E DEFICIÊNCIA INTELECTUAL NO BRASIL}
+\label{educ_inclusiva_di_brasil}
 
 A legislação brasileira garante o direito à educação inclusiva para alunos com deficiência intelectual (DI) \cite{brasil2015lbi}, mas a realidade da escola pública revela uma lacuna significativa entre o que a lei prevê e o que o professor consegue executar \cite{souza2025acessibilidade}. O educador não possui formação específica nem tempo hábil para dominar os diferentes perfis neurodivergentes presentes em uma mesma turma \cite{irm2026panorama}, resultando em uma inclusão que frequentemente se limita à presença física, sem garantir aprendizagem efetiva \cite{oliveira2025escolas}. É nessa lacuna que o sistema proposto se insere.
 
-\subsection{BASE LEGAL}
-
 A educação inclusiva no Brasil está fundamentada principalmente na Lei nº 13.146/2015 \cite{brasil2015lbi}, que assegura o direito das pessoas com deficiência à educação preferencialmente na rede regular de ensino. Complementarmente, o Decreto nº 10.502/2020 \cite{brasil2020pnee} instituiu diretrizes para o Atendimento Educacional Especializado (AEE), determinando que os profissionais da educação recebam formação orientada à atuação efetiva em espaços comuns ou especializados. Importante registrar que esse decreto foi revogado em 1º de janeiro de 2023 pelo Decreto nº 11.370 \cite{brasil2023revogacao}, o que evidencia a instabilidade das políticas de educação especial no país e reforça a necessidade de soluções que não dependam exclusivamente de marcos legais específicos.
 
-\subsection{CRESCIMENTO DAS MATRÍCULAS}
+Dados do Censo Escolar evidenciam a magnitude do desafio. Em 2025, havia aproximadamente 2,4 milhões de estudantes com alguma deficiência matriculados na educação básica brasileira, um crescimento de 153\% em relação a 2016 \cite{inep2025censo}. Desse total, a deficiência intelectual representa cerca de 43\% dos casos, sendo a categoria mais numerosa dentro da educação especial \cite{inep2025censo}. Esses números indicam que o professor da escola pública muito provavelmente encontrará mais de um aluno com DI na mesma turma, cada um com características, ritmos e necessidades de apoio distintos.
 
-Dados do Censo Escolar evidenciam a magnitude do desafio. Em 2025, havia aproximadamente 2,4 milhões de estudantes com alguma deficiência matriculados na educação básica brasileira, um crescimento de 153\% em relação a 2016 \cite{inep2025censo}. Desse total, a deficiência intelectual representa cerca de 43\% dos casos, sendo a categoria mais numerosa dentro da educação especial \cite{inep2025censo}. Esses números indicam que o 5 professor da escola pública muito provavelmente encontrará mais de um aluno com DI na mesma turma, cada um com características, ritmos e necessidades de apoio distintos.
-
-\subsection{A LACUNA ENTRE A LEI E A PRÁTICA}
-
-Pesquisas recentes na área educacional brasileira apontam de forma consistente
-que a inclusão de alunos com DI ainda é um processo em construção. Um estudo qualitativo
-realizado em escolas de Salvador-BA, com professores do 2º ao 4º ano e profissionais do
-AEE, identificou que a falta de formação docente e o suporte institucional insuficiente
-estão entre os principais obstáculos à efetivação da inclusão \cite{souza2025acessibilidade}.
-O mesmo estudo, no entanto, reconhece que práticas inclusivas eficazes existem, como
-adaptações curriculares, uso de objetos concretos e estratégias centradas no ritmo de cada
-estudante, mas dependem de condições que nem sempre estão disponíveis.
-Outra investigação, publicada na Revista Foco (\citeyear{oliveira2025escolas}), reforça esse panorama
-ao elencar os desafios enfrentados pelas escolas regulares: falta de recursos pedagógicos
-adaptados, ausência de formação continuada voltada para a inclusão e barreiras atitudinais
-\cite{oliveira2025escolas}. O estudo destaca que, para que a inclusão de alunos com DI
-seja efetiva, não basta garantir o acesso à escola; é necessário assegurar participação plena
-e aprendizagem significativa.
-
-\subsection{A DIFICULDADE ESPECÍFICA DO PROFESSOR}
+Pesquisas recentes na área educacional brasileira apontam de forma consistente que a inclusão de alunos com DI ainda é um processo em construção. Um estudo qualitativo realizado em escolas de Salvador-BA, com professores do 2º ao 4º ano e profissionais do AEE, identificou que a falta de formação docente e o suporte institucional insuficiente estão entre os principais obstáculos à efetivação da inclusão \cite{souza2025acessibilidade}. O mesmo estudo, no entanto, reconhece que práticas inclusivas eficazes existem, como adaptações curriculares, uso de objetos concretos e estratégias centradas no ritmo de cada estudante, mas dependem de condições que nem sempre estão disponíveis. Outra investigação, publicada na Revista Foco em 2025, reforça esse panorama ao elencar os desafios enfrentados pelas escolas regulares: falta de recursos pedagógicos adaptados, ausência de formação continuada voltada para a inclusão e barreiras atitudinais \cite{oliveira2025escolas}. O estudo destaca que, para que a inclusão de alunos com DI seja efetiva, não basta garantir o acesso à escola; é necessário assegurar participação plena e aprendizagem significativa.
 
 A literatura aponta que o professor do ensino regular, em sua maioria, não recebeu formação inicial adequada para trabalhar com alunos com DI. Um estudo realizado no Piauí com professores dos anos iniciais do Ensino Fundamental revelou que, embora os docentes demonstrem conhecimento teórico sobre Educação Especial, eles enfrentam dificuldades concretas na sala de aula, como estrutura física inadequada e escassez de recursos didático-pedagógicos \cite{oliveira2025escolas}. A pesquisa também identificou que os professores se esforçam para propor atividades diferenciadas, mas o fazem sem o suporte necessário. Um ponto crítico emerge dessa literatura \cite{oliveira2025escolas}: o professor precisaria estudar cada perfil neurodivergente separadamente para conseguir planejar atividades minimamente adequadas. Considerando que uma turma pode ter alunos neurodivergentes associados a diferentes condições (dificuldades cognitivas, de linguagem, de atenção, entre outras), essa tarefa torna-se inviável dentro da carga horária docente. O resultado é que a inclusão, muitas vezes, acaba se reduzindo à socialização: a criança permanece na sala, mas não necessariamente acessa o conhecimento.
 
 \section{DIFICULDADES ESTRUTURAIS E FINANCEIRAS DA ESCOLA PÚBLICA NO ENSINO DE ALUNOS COM DI}
+\label{dificuldades_estruturais}
 
-O professor da escola pública enfrenta uma combinação de dificuldades que vão muito além da falta de formação inicial \cite{irm2026panorama}. A ausência de incentivo financeiro para capacitação, a precariedade de recursos materiais, a insuficiência de profissionais especializados e a sobrecarga de trabalho tornam praticamente impossível o ensino adequado de alunos com deficiência intelectual (DI) \cite{cunha2025recursos, lievore2025financiamento}. Essas barreiras são estruturais e afetam diretamente a qualidade da inclusão.
+O professor da escola pública enfrenta uma combinação de dificuldades que vão muito além da falta de formação inicial \cite{irm2026panorama}. A ausência de incentivo financeiro para capacitação, a precariedade de recursos materiais, a insuficiência de profissionais especializados e a sobrecarga de trabalho tornam praticamente impossível o ensino adequado de alunos com deficiência intelectual (DI) \cite{cunha2025recursos,lievore2025financiamento}. Essas barreiras são estruturais e afetam diretamente a qualidade da inclusão.
 
-\subsection{FALTA DE FORMAÇÃO CONTINUADA E AUSÊNCIA DE ICENTIVO FINANCEIRO}Os dados do Censo Escolar 2025 revelam uma realidade preocupante: apenas
-11,3\% dos gestores escolares possuíam formação continuada em educação inclusiva em
-2025, um número que, embora tenha crescido em relação a 2019 (5,8\%), ainda está muito
-aquém do necessário \cite{irm2026panorama}. Mais crítico ainda é o dado sobre os professores
-regentes: em 2024, apenas 6,4\% dos docentes tinham formação continuada em Educação
-Especial, totalizando 151 mil professores com essa formação em um universo de 2,4 milhões
-de docentes no país \cite{irm2026panorama}.
-Essa lacuna não é acidental. A ausência de incentivo financeiro é um dos principais
-fatores que impedem o professor da rede pública de buscar capacitação. Cursos de especialização em Educação Especial ou Psicopedagogia são pagos e, para um professor com
-jornada dupla ou tripla, representam um custo financeiro e de tempo inviável. Além disso,
-as escolas frequentemente não oferecem tempo remunerado para estudo nem parcerias
-estruturadas com universidades para formação continuada \cite{educacaointegral2026}.
-A pesquisa acadêmica confirma esse cenário: dados de um estudo com professores
-apontam que a escassez de recursos foi apontada por 60\% dos participantes como um
-problema, e a ausência de recursos que prejudicam o processo de ensino-aprendizagem foi
-confirmada por 86,6\% (somando concordância e concordância forte) \cite{cunha2025recursos}. A
-falta de investimento público necessário para viabilizar práticas inclusivas é uma barreira
-estrutural que se agrava em contextos de restrição orçamentária.
+Os dados do Censo Escolar 2025 revelam uma realidade preocupante: apenas 11,3\% dos gestores escolares possuíam formação continuada em educação inclusiva em 2025, um número que, embora tenha crescido em relação a 2019 (5,8\%), ainda está muito aquém do necessário \cite{irm2026panorama}. Mais crítico ainda é o dado sobre os professores regentes: em 2024, apenas 6,4\% dos docentes tinham formação continuada em Educação Especial, totalizando 151 mil professores com essa formação em um universo de 2,4 milhões de docentes no país \cite{irm2026panorama}. Essa lacuna não é acidental. A ausência de incentivo financeiro é um dos principais fatores que impedem o professor da rede pública de buscar capacitação. Cursos de especialização em Educação Especial ou Psicopedagogia são pagos e, para um professor com jornada dupla ou tripla, representam um custo financeiro e de tempo inviável. Além disso, as escolas frequentemente não oferecem tempo remunerado para estudo nem parcerias estruturadas com universidades para formação continuada, o que é consistente com a literatura sobre necessidades formativas docentes, que aponta a ausência de condições institucionais adequadas para a formação continuada em serviço \cite{becker2026necessidades,educacaointegral2026}. A pesquisa acadêmica confirma esse cenário: dados de um estudo com professores apontam que a escassez de recursos foi apontada por 60\% dos participantes como um problema, e a ausência de recursos que prejudicam o processo de ensino-aprendizagem foi confirmada por 86,6\% (somando concordância e concordância forte) \cite{cunha2025recursos}. A falta de investimento público necessário para viabilizar práticas inclusivas é uma barreira estrutural que se agrava em contextos de restrição orçamentária.
 
-\subsection{PRECARIEDADE DE RECURSOS MATERIAIS E INFRAESTRUTRA}
+Além da formação, a escola pública carece de recursos materiais básicos para a inclusão. Mais de 20\% das escolas brasileiras não possuem nenhum item de acessibilidade física registrado \cite{irm2026panorama}. Entre as que possuem, os recursos mais comuns são rampas (57,6\%), banheiro adaptado (54,8\%), vão livre (43,4\%) e corrimão (34,2\%) \cite{irm2026panorama}. Quando se trata de recursos pedagógicos adaptados, materiais concretos, jogos educativos e tecnologia assistiva, a situação é ainda mais crítica. Um estudo sobre a implementação de políticas inclusivas em escolas públicas revelou que 46,6\% dos professores concordaram e 40\% concordaram fortemente que a ausência de recursos prejudica o processo de ensino-aprendizagem, enquanto 60\% concordaram e 26,6\% concordaram fortemente, embora denotem que parte dos recursos existe, mas não atende às demandas, pois são insuficientes \cite{cunha2025recursos}. Isso demonstra que, mesmo quando existem alguns recursos, eles são insuficientes para atender à demanda real. A demora na disponibilização de recursos também foi apontada como barreira: 80\% dos participantes (somando concordância e concordância forte) relataram lentidão nos processos administrativos para aquisição de materiais \cite{cunha2025recursos}. Isso evidencia entraves burocráticos que impactam diretamente o cotidiano da sala de aula.
 
-Além da formação, a escola pública carece de recursos materiais básicos para a
-inclusão. Mais de 20\% das escolas brasileiras não possuem nenhum item de acessibilidade
-física registrado \cite{irm2026panorama}. Entre as que possuem, os recursos mais comuns
-são rampas (57,6\%), banheiro adaptado (54,8\%), vão livre (43,4\%) e corrimão (34,2\%)
-\cite{irm2026panorama}.
-7
-Quando se trata de recursos pedagógicos adaptados, materiais concretos, jogos
-educativos e tecnologia assistiva, a situação é ainda mais crítica. Um estudo sobre a
-implementação de políticas inclusivas em escolas públicas revelou que 46,6\% dos professores
-concordaram e 40\% concordaram fortemente que a ausência de recursos prejudica o processo
-de ensino-aprendizagem, enquanto 60\% \cite{cunha2025recursos}. Isso demonstra que, mesmo
-quando existem alguns recursos, eles são insuficientes para atender à demanda real.
-A demora na disponibilização de recursos também foi apontada como barreira:
-80\% dos participantes (somando concordância e concordância forte) relataram lentidão
-nos processos administrativos para aquisição de materiais \cite{cunha2025recursos}. Isso evidencia
-entraves burocráticos que impactam diretamente o cotidiano da sala de aula.
+Outro problema estrutural é a insuficiência de equipes multiprofissionais nas escolas públicas. A literatura sobre a área documenta que a escassez de professores especializados e de equipes de apoio compromete a qualidade do atendimento a alunos com deficiência e amplia a sobrecarga do professor regente \cite{billingsley2019attrition,brunsting2026burnout,amorim2023escassez}. Nesse contexto, um relato de escuta pública em Amaralina (GO) destacou a necessidade urgente de ampliar a equipe multiprofissional, com psicólogos, terapeutas ocupacionais e fonoaudiólogos, para atender adequadamente alunos neuroatípicos \cite{mpeduc2025}. No Distrito Federal, a situação chegou a um ponto crítico: nos 13 Centros de Ensino Especial, salas com até quatro professores atendiam apenas três alunos, gerando superlotação, não pelo número absoluto, mas pela demanda por acompanhamento individualizado que supera a capacidade das equipes \cite{forum2026df}. Uma professora relatou ter sido agredida por um aluno com TEA que não recebia o suporte necessário, evidenciando o impacto da falta de profissionais na segurança e no bem-estar de todos \cite{forum2026df}. Esse cenário se agrava com a sobrecarga do professor regente, que precisa dar conta de uma turma diversa, com alunos de diferentes perfis neurodivergentes, sem o apoio de especialistas. A consequência é que a inclusão, muitas vezes, acaba se reduzindo à socialização: o aluno permanece na sala, mas não acessa o conhecimento de forma significativa.
 
-
-\subsection{FALTA DE PROFISSIONAIS ESPECIALIZADOS E SOBRECARGA DOCENTE}
-
-Outro problema estrutural é a insuficiência de equipes multiprofissionais nas
-escolas públicas. Um relato de escuta pública em Amaralina (GO) destacou a necessidade
-urgente de ampliar a equipe multiprofissional, com psicólogos, terapeutas ocupacionais e
-fonoaudiólogos, para atender adequadamente alunos neuroatípicos \cite{mpeduc2025}.
-No Distrito Federal, a situação chegou a um ponto crítico: nos 13 Centros de
-Ensino Especial, salas com até quatro professores atendiam apenas três alunos, gerando
-superlotação, não pelo número absoluto, mas pela demanda por acompanhamento individualizado que supera a capacidade das equipes \cite{forum2026df}. Uma professora relatou ter
-sido agredida por um aluno com TEA que não recebia o suporte necessário, evidenciando
-o impacto da falta de profissionais na segurança e no bem-estar de todos \cite{forum2026df}.
-Esse cenário se agrava com a sobrecarga do professor regente, que precisa dar
-conta de uma turma diversa, com alunos de diferentes perfis neurodivergentes, sem o
-apoio de especialistas. A consequência é que a inclusão, muitas vezes, acaba se reduzindo
-à socialização: o aluno permanece na sala, mas não acessa o conhecimento de forma
-significativa.
-
-\subsection{A DEPÊNDENCIA DE RECURSOS EXTERNOS E A LÓGICA DO DESINVESTIMENTO}
-
-A pesquisa acadêmica aponta uma questão estrutural mais profunda: a desarmonia
-entre as políticas públicas formuladas e a efetiva reserva orçamentária destinada ao seu
-cumprimento \cite{lievore2025financiamento}. Embora o Brasil tenha uma legislação robusta
-sobre inclusão \cite{brasil2015lbi, brasil2020pnee}, os avanços normativos não foram acompanhados por
-mecanismos financeiros compatíveis com as exigências pedagógicas, estruturais e humanas
-da Educação Especial \cite{lievore2025financiamento}.
-8
-Um estudo sobre a Meta 4 do Plano Nacional de Educação (2014–2024) confirma
-esse diagnóstico: houve avanços normativos e aumento de recursos via Fundeb, mas não
-houve ampliação da cobertura do Atendimento Educacional Especializado nas
-redes públicas de ensino \cite{franca2025financiamento}. Os dados mostram que o percentual
-de matrículas na Educação Básica de alunos de 4 a 17 anos com deficiência, TGD, altas
-habilidades ou superdotação que recebem AEE apresentou decréscimo no período,
-de 50\% em 2014 para 47\% em 2023 \cite{franca2025financiamento}. Além disso, os
-valores destinados à Educação Especial via PDDE (Programa Dinheiro Direto na Escola)
-apresentaram decréscimos significativos no período de 2019 a 2022, que podem estar
-relacionados aos efeitos pandêmicos, mas também à política de austeridade fiscal imposta
-pela Emenda Constitucional nº 95/2016 \cite{franca2025financiamento}.
-A lógica do desinvestimento na Educação Especial é agravada quando a educação
-passa a ser concebida sob uma ótica de retorno econômico. Áreas de menor “atratividade
-mercadológica”, como a Educação Especial, tendem a sofrer recorrentes desinvestimentos
-estruturais e operacionais \cite{lievore2025financiamento}. Isso significa que, sem pressão política
-e social, a tendência é que os recursos para a inclusão de alunos com DI permaneçam
-insuficientes.
+Embora o Brasil tenha uma legislação robusta sobre inclusão \cite{brasil2015lbi}, ainda que marcos regulatórios posteriores, como o Decreto nº 10.502/2020, tenham sido revogados \cite{brasil2020pnee,brasil2023revogacao}, os avanços normativos não foram acompanhados por mecanismos financeiros compatíveis com as exigências pedagógicas, estruturais e humanas da Educação Especial \cite{lievore2025financiamento}. Um estudo sobre a Meta 4 do Plano Nacional de Educação (2014–2024) confirma esse diagnóstico: houve avanços normativos e aumento de recursos via Fundeb, mas não houve ampliação da cobertura do Atendimento Educacional Especializado nas redes públicas de ensino \cite{franca2025financiamento}. Os dados mostram que o percentual de matrículas na Educação Básica de alunos de 4 a 17 anos com deficiência, TGD, altas habilidades ou superdotação que recebem AEE apresentou decréscimo no período, de 50\% em 2014 para 47\% em 2023 \cite{franca2025financiamento}. Além disso, os valores destinados à Educação Especial via PDDE (Programa Dinheiro Direto na Escola) apresentaram decréscimos significativos no período de 2019 a 2022, que podem estar relacionados aos efeitos pandêmicos, mas também à política de austeridade fiscal imposta pela Emenda Constitucional nº 95/2016 \cite{franca2025financiamento}. A lógica do desinvestimento na Educação Especial é agravada quando a educação passa a ser concebida sob uma ótica de retorno econômico. Áreas de menor “atratividade mercadológica”, como a Educação Especial, tendem a sofrer recorrentes desinvestimentos estruturais e operacionais \cite{lievore2025financiamento}. Isso significa que, sem pressão política e social, a tendência é que os recursos para a inclusão de alunos com DI permaneçam insuficientes.
 
 \section{INTELIGÊNCIA ARTIFICIAL GENERATIVA COMO FERRAMENTA
 DE APOIO AO PROFESSOR}
+\label{ia_generativa_apoio}
 
-A terceira subseção apresenta a IA generativa como solução tecnológica viável para o problema estrutural exposto na subseção anterior. A ferramenta se posiciona como apoio à decisão docente, e não como substituta do professor.
-
-\subsection{IA GENERATIVA E O PROBLEMA DA ESCOLA PÚBLICA}
+A Inteligência Artificial generativa se apresenta como solução tecnológica viável para o problema estrutural exposto na seção anterior. A ferramenta se posiciona como apoio à decisão docente, e não como substituta do professor.
 
 A IA generativa (GenAI) refere-se a sistemas baseados em grandes modelos de linguagem (LLMs) capazes de produzir texto, imagens e outros conteúdos a partir de comandos em linguagem natural \cite{engaja2026}. Diferentemente de tecnologias assistivas tradicionais, a GenAI pode gerar conteúdo novo e contextualizado, reescrever textos em diferentes níveis de complexidade, criar atividades adaptadas e sugerir estratégias pedagógicas sob demanda.
 
-No contexto da escola pública brasileira, essa capacidade é particularmente relevante. Como demonstrado na subseção anterior, o professor enfrenta falta de formação continuada, ausência de incentivo financeiro, precariedade de recursos e sobrecarga de trabalho \cite{irm2026panorama, cunha2025recursos}. A IA generativa pode atuar como ferramenta de apoio para reduzir parte dessa carga, oferecendo um ponto de partida para a adaptação de atividades.
+No contexto da escola pública brasileira, essa capacidade é particularmente relevante. Como demonstrado na seção anterior, o professor enfrenta falta de formação continuada, ausência de incentivo financeiro, precariedade de recursos e sobrecarga de trabalho \cite{irm2026panorama,cunha2025recursos}. A IA generativa pode atuar como ferramenta de apoio para reduzir parte dessa carga, oferecendo um ponto de partida para a adaptação de atividades.
 
-\subsection{O PROFESSOR NO CONTROLE: ATIVIDADE COMO RASCUNHO}
-\label{sec:professor_controle}
-
-A IA generativa não substitui o professor. Toda atividade produzida é armazenada com status de rascunho, o que significa que:
-
-\begin{itemize}
-    \item A atividade não é publicada automaticamente para o aluno;
-    \item O professor precisa revisar, corrigir e adaptar antes de utilizá-la;
-    \item A decisão pedagógica final permanece humana.
-\end{itemize}
+A IA generativa, contudo, não substitui o professor. Toda atividade produzida é armazenada com status de rascunho, o que significa que: a atividade não é publicada automaticamente para o aluno; o professor precisa revisar, corrigir e adaptar antes de utilizá-la; e a decisão pedagógica final permanece humana. Esse mecanismo está alinhado à literatura sobre IA na educação inclusiva \cite{engaja2026}, que alerta para riscos como viés algorítmico, alucinações e padronização excessiva. A revisão humana obrigatória é uma barreira de segurança pedagógica e ética.
 
 Esse mecanismo está alinhado à literatura sobre IA na educação inclusiva \cite{engaja2026}, que alerta para riscos como viés algorítmico, alucinações e padronização excessiva. A revisão humana obrigatória é uma barreira de segurança pedagógica e ética.
 
@@ -153,25 +51,14 @@ Esse mecanismo está alinhado à literatura sobre IA na educação inclusiva \ci
 
 O desenvolvimento de uma plataforma educacional voltada para a inclusão não depende apenas da qualidade dos conteúdos gerados pela Inteligência Artificial, mas também de como as informações são apresentadas ao professor. Nesse sentido, o design de interface e a escolha criteriosa da paleta de cores assumem um papel fundamental na redução da carga cognitiva e na criação de um ambiente digital acolhedor, especialmente quando se considera o contexto da neurodivergência.
 
-\subsection{O PAPEL DA COR NA INTERFACE DO PROFESSOR}
+A literatura científica evidencia que professores e alunos percebem a função da cor de maneiras distintas, o que justifica a adoção de escolhas de design específicas para plataformas docentes \cite{imas2026role,tabora2026systematic}. Estudos indicam que a maioria dos professores (cerca de 65\%) associa o uso da cor principalmente à clareza e ao foco \cite{imas2026role}. Nessa perspectiva, a cor atua como uma ferramenta cognitiva e organizacional, melhorando o foco, auxiliando na comparação de informações e reduzindo distrações. Por isso, a adoção de uma paleta pastel e harmoniosa é preferível a cores visualmente agressivas (como contrastes de alta saturação ou vermelhos brilhantes), que podem causar ofuscamento e desconforto, priorizando o conforto visual e a redução da carga cognitiva \cite{bertoletti2026light}. Embora a plataforma seja destinada ao professor, há um impacto indireto e positivo no aluno. Os estudantes (cerca de 70\%) tendem a associar a cor à motivação e ao engajamento emocional. Ao utilizar um sistema que organiza a informação de forma clara e visualmente agradável, o professor consegue preparar e conduzir atividades que engajam mais os alunos, uma vez que a cor também está associada à motivação e ao engajamento emocional no contexto educacional \cite{imas2026role}. Além disso, a paleta pastel e a sinalização cromática (como badges ou etiquetas de status) atuam como um sinal cognitivo que guia o olhar do docente de forma intuitiva. A comunicação visual eficaz, ao indicar status como “Requer Atenção” ou “Evoluindo”, permite que o professor identifique rapidamente quais alunos precisam de intervenção, liberando seus recursos cognitivos para tarefas pedagógicas mais complexas \cite{tabora2026systematic}.
 
-A literatura científica evidencia que professores e alunos percebem a função da cor de maneiras distintas, o que justifica a adoção de escolhas de design específicas para plataformas docentes \cite{imas2026role,tabora2026systematic}. Estudos indicam que a maioria dos professores (cerca de 65\%) associa o uso da cor principalmente à clareza e ao foco \cite{imas2026role}. Nessa perspectiva, a cor atua como uma ferramenta cognitiva e organizacional, melhorando o foco, auxiliando na comparação de informações e reduzindo distrações. Por isso, a adoção de uma paleta pastel e harmoniosa é preferível a cores visualmente agressivas (como contrastes de alta saturação ou vermelhos brilhantes), que podem causar ofuscamento e desconforto, priorizando o conforto visual e a redução da carga cognitiva \cite{bertoletti2026light}.
-Embora a plataforma seja destinada ao professor, há um impacto indireto e positivo no aluno. Os estudantes (cerca de 70\%) tendem a associar a cor à motivação e ao engajamento emocional \cite{imas2026role}. Ao utilizar um sistema que organiza a informação de forma clara e visualmente agradável, o professor consegue preparar e conduzir atividades que engajam mais os alunos \cite{li2026motion}.
-Além disso, a paleta pastel e a sinalização cromática (como \textit{badges} ou etiquetas de status) atuam como um sinal cognitivo que guia o olhar do docente de forma intuitiva. A comunicação visual eficaz, ao indicar status como ``Requer Atenção'' ou ``Evoluindo'', permite que o professor identifique rapidamente quais alunos precisam de intervenção, liberando seus recursos cognitivos para tarefas pedagógicas mais complexas \cite{tabora2026systematic}.
+A escolha de uma paleta suave não é apenas estética, mas tem sido associada, na literatura sobre design inclusivo e processamento sensorial, a melhores condições de conforto visual e de redução de estímulos excessivos. Estudos mostram que cores muito saturadas, vibrantes ou combinações de alto contraste podem provocar desconforto visual e sobrecarga sensorial em pessoas neurodivergentes, como indivíduos com Transtorno do Déficit de Atenção com Hiperatividade (TDAH) e Transtorno do Espectro Autista (TEA) \cite{bertoletti2026light,wiley2025notice,morellato2025comunicacao}. Paletas mais suaves e harmoniosas promovem um processamento visual confortável \cite{bertoletti2026light}. No caso específico da percepção no espectro autista, a literatura indica que estudantes autistas frequentemente percebem as cores com mais intensidade. Tons neutros e pastéis exercem um efeito calmante, enquanto cores berrantes ou de alto contraste podem ser avassaladoras \cite{bertoletti2026light,wiley2025notice}. Pesquisas em ambientes educacionais demonstram ainda que a dominância de espectros de cores frias e suaves (como verde e azul) ajuda a criar uma atmosfera tranquila que apoia a fase de concentração da criança \cite{imas2026role,bertoletti2026light}.
 
-\subsection{A CIÊNCIA DAS CORES PASTÉIS E A NEURODIVERGÊNCIA}
-
-A escolha de uma paleta suave não é apenas estética, mas fundamentada na neurociência. Estudos mostram que cores muito saturadas, vibrantes ou combinações de alto contraste podem provocar desconforto visual e sobrecarga sensorial em pessoas neurodivergentes, como indivíduos com Transtorno do Déficit de Atenção com Hiperatividade (TDAH) e Transtorno do Espectro Autista (TEA) \cite{bertoletti2026light,wiley2025notice,morellato2025comunicacao}. Paletas mais suaves e harmoniosas promovem um processamento visual confortável \cite{bertoletti2026light}.
-
-No caso específico da percepção no espectro autista, a literatura indica que estudantes autistas frequentemente percebem as cores com mais intensidade. Tons neutros e pastéis exercem um efeito calmante, enquanto cores berrantes ou de alto contraste podem ser avassaladoras \cite{bertoletti2026light,wiley2025notice}. Pesquisas em ambientes educacionais demonstram ainda que a dominância de espectros de cores frias e suaves (como verde e azul) ajuda a criar uma atmosfera tranquila que apoia a fase de concentração da criança \cite{imas2026role,bertoletti2026light}.
-
-\subsection{TEORIA DA CARGA COGNITIVA E A FUNÇÃO SINALIZADORA}
-
-O design da interface do IncluiEdu também se ancora na Teoria da Carga Cognitiva e no Princípio da Sinalização (\textit{Signaling Principle}). A codificação por cores atua como um ``sinal'' visual. Estudos mostram que o uso estratégico da cor reduz a carga cognitiva intrínseca e extrínseca (o esforço mental para processar a informação), permitindo que os usuários aprendam de forma mais eficiente e concluam tarefas mais rapidamente \cite{tabora2026systematic,li2026motion}.
-
-A teoria do filtro cognitivo das cores proposta por \citeonline{kozybayev2026cognitive} considera que a cor funciona como um filtro automático no estágio pré-atentivo do cérebro. A utilização de cores suaves como pano de fundo e cores com significado para indicar ``status'' auxilia o cérebro a isolar a informação essencial, minimizando a carga cognitiva desnecessária. Dessa forma, a interface não apenas se torna mais bonita, mas cognitivamente mais eficiente para o professor.
+O design da interface do IncluiEdu também se ancora na Teoria da Carga Cognitiva \cite{sweller1988cognitive} e no Princípio da Sinalização (Signaling Principle) \cite{mayer2005signaling}. A codificação por cores atua como um “sinal” visual. Estudos mostram que o uso estratégico da cor reduz a carga cognitiva intrínseca e extrínseca (o esforço mental para processar a informação), permitindo que os usuários aprendam de forma mais eficiente e concluam tarefas mais rapidamente \cite{tabora2026systematic,huang2025web}. A teoria do filtro cognitivo das cores proposta por \citeonline{kozybayev2026cognitive} considera que a cor funciona como um filtro automático no estágio pré-atentivo do cérebro. A utilização de cores suaves como pano de fundo e cores com significado para indicar “status” auxilia o cérebro a isolar a informação essencial, minimizando a carga cognitiva desnecessária. Dessa forma, a interface não apenas se torna mais bonita, mas cognitivamente mais eficiente para o professor.
 
 \section{TRABALHOS CORRELATOS}
+\label{trabalhos_correlatos}
 A Inklua é uma plataforma de gestão da Educação Especial e Inclusiva que centraliza informações dos estudantes e auxilia no planejamento, acompanhamento e documentação. Utiliza IA para auxiliar na criação de PAEE, PEI e atividades adaptadas, além de oferecer recursos para planos de aula, monitoramento da aprendizagem e avaliação de habilidades \cite{inklua2026}.
 
 A Vínculoo é uma plataforma digital de educação especial e inclusiva que utiliza IA para apoiar professores no acompanhamento e planejamento pedagógico. Seu recurso \textit{Apoio Inteligente} analisa laudos, relatórios e observações para sugerir metas e estratégias pedagógicas, auxiliando na elaboração de PEI e PAEE e na adaptação de atividades. A plataforma enfatiza que a IA não substitui a decisão do professor, apresentando suas produções como sugestões editáveis \cite{vinculoo2026}.
@@ -192,15 +79,15 @@ Esses trabalhos mostram que a busca por soluções tecnológicas para a educaç�
             \hline
             \textbf{Solução} & \textbf{Foco principal} & \textbf{Limitação em relação ao presente trabalho} \\
             \hline
-            Inklua & Gestão e documentação da Educação Especial & Ênfase em gestão, não na criação de atividades adaptadas \\
+            Inklua (2015) & Gestão e documentação da Educação Especial & Ênfase em gestão, não na criação de atividades adaptadas \\
             \hline
-            Vínculoo & Acompanhamento pedagógico e elaboração de PEI/PAEE & Foco em planejamento e documentação, não na geração de atividades \\
+            Vínculoo (2019) & Acompanhamento pedagógico e elaboração de PEI/PAEE & Foco em planejamento e documentação, não na geração de atividades \\
             \hline
             SALINA (2022) & Linhas de produto de software para gestão de atividades & Abordagem acadêmica de gestão, não de geração de conteúdo adaptado \\
             \hline
-            EDUNIA & Personalização de atividades com base em interesses e BNCC & Voltada ao professor ou responsável, sem foco explícito nas limitações da escola pública \\
-            \hline
             NASCIMENTO; BATISTA; PEDERIVA (2024) & Software educacional para alfabetização e letramento & Escopo restrito à alfabetização, sem apoio amplo à adaptação curricular \\
+            \hline
+            EDUNIA (2026) & Personalização de atividades com base em interesses e BNCC & Voltada ao professor ou responsável, sem foco explícito nas limitações da escola pública \\
             \hline
             \textbf{Presente trabalho} & \textbf{Criação de atividades adaptadas para professores do ensino fundamental} & \textbf{Considera limitações do contexto escolar público e exige revisão humana obrigatória} \\
             \hline
