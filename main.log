@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.22)  22 NOV 2026 19:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.22)  22 NOV 2026 21:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1556,17 +1556,22 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 
-{D:/MikTex/fonts/enc/dvips/lm/lm-ts1.enc}] [7] [8]) [9]
+{D:/MikTex/fonts/enc/dvips/lm/lm-ts1.enc}] [7]
+Overfull \hbox (19.7557pt too wide) in paragraph at lines 43--64
+ [][] 
+ []
+
+[8] [9]) [10]
 \openout2 = `./02-elementos-textuais/tecnicaref.aux'.
 
  (02-elementos-textuais/tecnicaref.tex
 Cap\'{\i }tulo 2.
-[10
+[11
 
 
 
 
-] [11] [12] [13] [14] [15] [16]
+] [12] [13] [14] [15] [16] [17]
 Underfull \hbox (badness 4518) in paragraph at lines 88--88
 \T1/lmr/m/n/12 (+20) BA-TISTA; PE-
  []
@@ -1586,109 +1591,75 @@ Underfull \hbox (badness 6188) in paragraph at lines 92--92
 []|\T1/lmr/bx/n/12 (+20) Presente tra-
  []
 
-) [17] [18]
+) [18] [19]
 \openout2 = `./02-elementos-textuais/disposicoes.aux'.
 
  (02-elementos-textuais/disposicoes.tex
 Cap\'{\i }tulo 3.
-[19
+[20
 
 
 
 
-] [20]
-<04-figuras/casos_de_uso.png, id=397, 1397.22pt x 679.53876pt>
+] [21] [22] [23]
+<04-figuras/casos_de_uso.png, id=407, 1397.22pt x 679.53876pt>
 File: 04-figuras/casos_de_uso.png Graphic file (type png)
 <use 04-figuras/casos_de_uso.png>
-Package pdftex.def Info: 04-figuras/casos_de_uso.png  used on input line 98.
+Package pdftex.def Info: 04-figuras/casos_de_uso.png  used on input line 119.
 (pdftex.def)             Requested size: 455.24411pt x 221.4074pt.
- [21]
-<04-figuras/diagrama_classes.png, id=405, 1367.1075pt x 773.89125pt>
+<04-figuras/diagrama_classes.png, id=410, 1367.1075pt x 773.89125pt>
 File: 04-figuras/diagrama_classes.png Graphic file (type png)
 <use 04-figuras/diagrama_classes.png>
-Package pdftex.def Info: 04-figuras/diagrama_classes.png  used on input line 108.
+Package pdftex.def Info: 04-figuras/diagrama_classes.png  used on input line 129.
 (pdftex.def)             Requested size: 455.24411pt x 257.69939pt.
- [22 <./04-figuras/casos_de_uso.png> <./04-figuras/diagrama_classes.png>]
-<04-figuras/modelo-relacional.png, id=414, 941.01563pt x 389.20406pt>
+ [24 <./04-figuras/casos_de_uso.png>]
+<04-figuras/modelo-relacional.png, id=419, 941.01563pt x 389.20406pt>
 File: 04-figuras/modelo-relacional.png Graphic file (type png)
 <use 04-figuras/modelo-relacional.png>
-Package pdftex.def Info: 04-figuras/modelo-relacional.png  used on input line 122.
+Package pdftex.def Info: 04-figuras/modelo-relacional.png  used on input line 143.
 (pdftex.def)             Requested size: 409.71692pt x 169.4568pt.
- [23 <./04-figuras/modelo-relacional.png>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 146.
-
-Overfull \hbox (4.18959pt too wide) in paragraph at lines 150--150
-[]|\T1/lmr/m/n/10.95 (-20) Autenticação| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
-[]|\T1/lmr/m/n/10.95 (+20) Turmas e
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
-[]|\T1/lmr/m/n/10.95 (+20) Inteligência
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
-[]|\T1/lmr/m/n/10.95 (+20) Encerra-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
-\T1/lmr/m/n/10.95 (+20) mento de
- []
-
-
-Overfull \hbox (9.14717pt too wide) in paragraph at lines 146--169
- [][] 
- []
-
-[24]) [25] [26]
+ [25 <./04-figuras/diagrama_classes.png>] [26 <./04-figuras/modelo-relacional.png>] [27] [28] [29]) [30]
 \openout2 = `./02-elementos-textuais/estrutura.aux'.
 
  (02-elementos-textuais/estrutura.tex
 Cap\'{\i }tulo 4.
-<04-figuras/painel_inicial.png, id=439, 939.51pt x 750.55406pt>
+<04-figuras/painel_inicial.png, id=461, 939.51pt x 750.55406pt>
 File: 04-figuras/painel_inicial.png Graphic file (type png)
 <use 04-figuras/painel_inicial.png>
-Package pdftex.def Info: 04-figuras/painel_inicial.png  used on input line 16.
+Package pdftex.def Info: 04-figuras/painel_inicial.png  used on input line 17.
 (pdftex.def)             Requested size: 409.71692pt x 327.31296pt.
-[27
+[31
 
 
 
 
  <./04-figuras/painel_inicial.png>]
-<04-figuras/turmas_alunos.png, id=448, 904.88063pt x 677.53125pt>
+<04-figuras/turmas_alunos.png, id=470, 904.88063pt x 677.53125pt>
 File: 04-figuras/turmas_alunos.png Graphic file (type png)
 <use 04-figuras/turmas_alunos.png>
-Package pdftex.def Info: 04-figuras/turmas_alunos.png  used on input line 28.
+Package pdftex.def Info: 04-figuras/turmas_alunos.png  used on input line 29.
 (pdftex.def)             Requested size: 409.71692pt x 306.7678pt.
-<04-figuras/gerar_atividade.png, id=454, 503.63156pt x 589.4522pt>
+<04-figuras/gerar_atividade.png, id=476, 503.63156pt x 589.4522pt>
 File: 04-figuras/gerar_atividade.png Graphic file (type png)
 <use 04-figuras/gerar_atividade.png>
-Package pdftex.def Info: 04-figuras/gerar_atividade.png  used on input line 44.
+Package pdftex.def Info: 04-figuras/gerar_atividade.png  used on input line 45.
 (pdftex.def)             Requested size: 218.51521pt x 255.75305pt.
-<04-figuras/atv_gerada.png, id=455, 505.89pt x 606.01407pt>
+<04-figuras/atv_gerada.png, id=477, 505.89pt x 606.01407pt>
 File: 04-figuras/atv_gerada.png Graphic file (type png)
 <use 04-figuras/atv_gerada.png>
-Package pdftex.def Info: 04-figuras/atv_gerada.png  used on input line 51.
+Package pdftex.def Info: 04-figuras/atv_gerada.png  used on input line 52.
 (pdftex.def)             Requested size: 218.51521pt x 261.76459pt.
- [28 <./04-figuras/turmas_alunos.png>]
-<04-figuras/acompanhamento_aluno.png, id=465, 1179.40625pt x 1567.8575pt>
+ [32 <./04-figuras/turmas_alunos.png>]
+<04-figuras/acompanhamento_aluno.png, id=488, 1179.40625pt x 1567.8575pt>
 File: 04-figuras/acompanhamento_aluno.png Graphic file (type png)
 <use 04-figuras/acompanhamento_aluno.png>
-Package pdftex.def Info: 04-figuras/acompanhamento_aluno.png  used on input line 68.
+Package pdftex.def Info: 04-figuras/acompanhamento_aluno.png  used on input line 69.
 (pdftex.def)             Requested size: 364.19667pt x 484.14084pt.
- [29 <./04-figuras/gerar_atividade.png> <./04-figuras/atv_gerada.png>] [30 <./04-figuras/acompanhamento_aluno.png>]
+ [33 <./04-figuras/gerar_atividade.png> <./04-figuras/atv_gerada.png>] [34 <./04-figuras/acompanhamento_aluno.png>]
 Cap\'{\i }tulo 5.
-) [31
+) [35
 
-] [32]
+] [36]
 \openout2 = `./02-elementos-textuais/ambientes.aux'.
 
 
@@ -1704,7 +1675,7 @@ No file ./02-elementos-textuais/citacoes.tex.
 
 
 bibitemlist
-[33
+[37
 
 
 
@@ -1715,7 +1686,7 @@ bibitemlist
 
 
 
-] [34])) [35]
+] [38])) [39]
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
@@ -1732,20 +1703,20 @@ L3 programming layer <2020/03/25>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: FB7EE75F1EA4533B64E1E5CAD81FDD89;5512.
+(rerunfilecheck)             Checksum: 28DB2BE88605D75B48E3658043BEFED7;5158.
  ) 
 Here is how much of TeX's memory you used:
- 36764 strings out of 467441
- 670481 string characters out of 5424490
- 1162910 words of memory out of 5000000
- 65068 multiletter control sequences out of 15000+600000
- 696677 words of font info for 190 fonts, out of 8000000 for 9000
+ 36762 strings out of 467441
+ 670505 string characters out of 5424490
+ 1165380 words of memory out of 5000000
+ 65080 multiletter control sequences out of 15000+600000
+ 691917 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,13n,121p,1955b,931s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<D:/MikTex/fonts/type1/public/lm/lmbx10.pfb><D:/MikTex/fonts/type1/public/lm/lmbx12.pfb><D:/MikTex/fonts/type1/public/lm/lmbx9.pfb><D:/MikTex/fonts/type1/public/lm/lmr10.pfb><D:/MikTex/fonts/type1/public/lm/lmr12.pfb><D:/MikTex/fonts/type1/public/lm/lmri10.pfb><D:/MikTex/fonts/type1/public/lm/lmri12.pfb><D:/MikTex/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (36 pages, 1105475 bytes).
+ 113i,13n,121p,1955b,927s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<D:/MikTex/fonts/type1/public/lm/lmbx10.pfb><D:/MikTex/fonts/type1/public/lm/lmbx12.pfb><D:/MikTex/fonts/type1/public/lm/lmbx9.pfb><D:/MikTex/fonts/type1/public/lm/lmbxi10.pfb><D:/MikTex/fonts/type1/public/lm/lmr10.pfb><D:/MikTex/fonts/type1/public/lm/lmr12.pfb><D:/MikTex/fonts/type1/public/lm/lmri12.pfb><D:/MikTex/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (40 pages, 1111681 bytes).
 PDF statistics:
- 691 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
- 41245 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 717 PDF objects out of 1000 (max. 8388607)
+ 123 named destinations out of 1000 (max. 500000)
+ 39197 words of extra memory for PDF output out of 42996 (max. 10000000)
 

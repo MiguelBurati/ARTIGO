@@ -3,6 +3,7 @@
 %
 
 \chapter{RESULTADOS}
+\label{chap:resultados}
 
 Os resultados do sistema IncluiEdu demonstram a viabilidade da integração entre a Inteligência Artificial Generativa e o design inclusivo. As telas reais do sistema, implementadas na Cloudflare, comprovam a aplicação prática dos requisitos levantados na metodologia.
 
@@ -56,7 +57,7 @@ As Figuras \ref{fig:gerar_atividade} e \ref{fig:atv_gerada} apresentam o fluxo c
     \fonte{Elaborado pelos autores (2026).}
 \end{figure}
 
-Observa-se na Figura \ref{fig:gerar_atividade} que o professor insere o tópico desejado (no exemplo, comunicação básica e emoções) e a duração da atividade, sem inserir dados sensíveis do aluno. A Figura \ref{fig:atv_gerada} mostra o retorno da IA, que gerou uma atividade lúdica intitulada ``O Semáforo das Emoções e Quantidades''. Nota-se a aplicação prática da barreira de segurança pedagógica discutida na \autoref{ia_generativa_apoio}: o sistema destaca a tag ``Gerada por IA - Rascunho para revisão'', garantindo que o professor avalie o conteúdo antes de aplicá-lo ao aluno.
+Observa-se na Figura \ref{fig:gerar_atividade} que o professor informa o tópico desejado (no exemplo, comunicação básica e emoções) e a duração da atividade. Além dessas informações, o sistema utiliza a área de aprendizagem, a dificuldade ou habilidade cadastrada e até cinco registros pedagógicos recentes do estudante, encaminhando esses dados ao modelo de Inteligência Artificial para contextualizar a atividade gerada, conforme descrito na Seção \ref{ia_generativa_apoio}. Os dados encaminhados ao modelo limitam-se ao conteúdo pedagógico dos registros, área de aprendizagem, habilidade observada, nível de autonomia e evidência registrada, sem o nome do estudante, imagem, documento ou qualquer identificador direto, em conformidade com os princípios de finalidade e necessidade previstos na LGPD (BRASIL, 2018) e com os requisitos RNF07 e RNF08. A Figura \ref{fig:atv_gerada} apresenta o retorno da IA, que gerou uma atividade lúdica intitulada "O Semáforo das Emoções e Quantidades". Nota-se a aplicação prática da barreira de segurança pedagógica discutida na Subseção \ref{ia_generativa_apoio}: o sistema destaca a identificação "Gerada por IA - Rascunho para revisão", permitindo que o professor avalie o conteúdo antes de aplicá-lo ao aluno.
 
 \section{ORGANIZAÇÃO VISUAL E SINALIZAÇÃO CROMÁTICA}
 

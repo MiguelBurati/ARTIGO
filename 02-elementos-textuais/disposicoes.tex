@@ -3,16 +3,21 @@
 %
 
 \chapter{MATERIAIS E MÉTODOS}
+\label{chap:materiais-e-metodos}
 
 Este capítulo apresenta os materiais e métodos utilizados no desenvolvimento do IncluiEdu. Inicialmente, são descritos os materiais e o ambiente de desenvolvimento, contemplando as duas configurações tecnológicas adotadas: a etapa inicial, executada localmente com Python, Django, SQLite e Ollama, e a versão atual, baseada em JavaScript e TypeScript, com backend em Cloudflare Workers, banco relacional Cloudflare D1 e geração de atividades por meio do Workers AI com o modelo Gemma. Em seguida, apresenta-se a metodologia de desenvolvimento, organizada em etapas de definição das funcionalidades pedagógicas, modelagem das informações, implementação dos recursos e verificações manuais da aplicação. Na sequência, são especificados os requisitos funcionais e não funcionais do sistema, com ênfase nas ações do professor e na proteção dos registros pedagógicos. A modelagem do sistema é apresentada por meio dos diagramas de casos de uso e de classes, do modelo relacional do banco de dados e da prototipagem da interface. Posteriormente, descreve-se a implementação do sistema, abrangendo a comunicação entre interface e backend, os mecanismos de autenticação, o controle de acesso e o acompanhamento pedagógico. Por fim, são relatados os testes e a validação manual das funcionalidades, bem como a implantação da aplicação e as condições necessárias para sua reprodutibilidade.
 
 \section{MATERIAIS E AMBIENTE DE DESENVOLVIMENTO}
 
-O desenvolvimento do IncluiEdu envolveu duas configurações tecnológicas. Na etapa inicial, executada localmente, foram utilizados Python e Django para a aplicação, SQLite para armazenamento e Ollama para integração com inteligência artificial. Posteriormente, a versão atual passou a utilizar JavaScript e TypeScript, com backend em Cloudflare Workers, banco relacional Cloudflare D1 e geração de atividades por meio do Workers AI, com o modelo Gemma \cite{cloudflare2026workersai,cloudflare2026gemma,cloudflare2026d1}.
+O desenvolvimento do IncluiEdu envolveu duas configurações tecnológicas distintas. Na etapa inicial, executada localmente, foram utilizados Python, com requisito mínimo de versão 3.10, o framework Django e o banco de dados SQLite para armazenamento das informações. O arquivo de dependências dessa implementação especifica o Django na faixa de versões 6.0 até antes da 7.0. Para a integração inicial com Inteligência Artificial, foi utilizado o Ollama, permitindo a execução local de modelos de linguagem.
 
-A interface web utiliza HTML, CSS e JavaScript para apresentar os recursos ao professor e comunicar-se com a API por requisições HTTP e dados em JSON. Na arquitetura atual, o arquivo \texttt{wrangler.jsonc} concentra a configuração do Worker, os vínculos com o banco de dados, o serviço de IA e os arquivos da interface. O código do projeto é mantido no GitHub.
+Posteriormente, a aplicação passou a utilizar uma arquitetura baseada em serviços da Cloudflare, desenvolvida em JavaScript e TypeScript, com interface construída em HTML e CSS. O backend utiliza Cloudflare Workers para processar requisições HTTP, enquanto o banco de dados relacional Cloudflare D1 é responsável pelo armazenamento dos registros \cite{cloudflare2026d1}. A comunicação entre a interface e a API utiliza dados estruturados no formato JSON.
 
-A arquitetura atual utiliza serviços da Cloudflare para executar o backend, armazenar os registros e integrar a geração de atividades com inteligência artificial. O Cloudflare Workers processa as requisições da aplicação, o Cloudflare D1 mantém os dados relacionais e o Workers AI disponibiliza o modelo Gemma para a elaboração das propostas pedagógicas \cite{cloudflare2026workersai,cloudflare2026gemma,cloudflare2026d1}.
+A geração de atividades pedagógicas é realizada pelo Cloudflare Workers AI \cite{cloudflare2026workersai}, utilizando o modelo de linguagem Gemma 4 26B A4B IT (\texttt{@cf/google/gemma-4-26b-a4b-it}) \cite{cloudflare2026gemma}. Para a geração de imagens complementares às atividades, é utilizado o modelo FLUX.1 Schnell (\texttt{@cf/black-forest-labs/flux-1-schnell}).
+
+O gerenciamento e a implantação da aplicação são realizados por meio da ferramenta Wrangler, na versão 4.129.0, registrada no arquivo \texttt{package-lock.json}. O arquivo \texttt{wrangler.jsonc} concentra as configurações do Worker, incluindo os vínculos com o banco de dados, o serviço de Inteligência Artificial e os arquivos da interface. O desenvolvimento também utiliza Node.js, com requisito mínimo de versão 18, e npm para gerenciamento das ferramentas de desenvolvimento.
+
+O código-fonte é mantido no GitHub, utilizando o Git para controle de versões e organização das alterações realizadas durante o desenvolvimento.
 
 \section{METODOLOGIA DE DESENVOLVIMENTO}
 
@@ -22,67 +27,83 @@ A definição das funcionalidades considerou a necessidade de organizar turmas e
 
 \section{REQUISITOS DO SISTEMA}
 
-Os requisitos funcionais foram definidos com foco nas ações do professor e na proteção dos registros pedagógicos, conforme o Quadro~\ref{qua:requisitos-funcionais}.
+Os requisitos do IncluiEdu foram definidos considerando as funcionalidades necessárias ao acompanhamento pedagógico e à geração de atividades adaptadas, além de aspectos relacionados à segurança, acessibilidade, desempenho e usabilidade. Para facilitar sua organização, os requisitos foram classificados em funcionais e não funcionais, com prioridades alta ou média, conforme sua importância para o funcionamento do sistema. Também foi estabelecida a relação de cada requisito com os objetivos específicos do trabalho.
 
-\begin{quadro}[htb]
+\begin{quadro}[H]
 \centering
 \caption{Requisitos funcionais do sistema}
 \label{qua:requisitos-funcionais}
-\begin{tabular}{|l|p{10cm}|}
+\begin{tabular}{|l|p{8cm}|c|c|}
 \hline
-\textbf{ID} & \textbf{Requisito funcional} \\
+\textbf{ID} & \textbf{Requisito funcional} & \textbf{Prioridade} & \textbf{Objetivo} \\
 \hline
-RF01 & Criar conta de professor \\
+RF01 & Criar conta de professor & Alta & OE2 \\
 \hline
-RF02 & Autenticar o professor \\
+RF02 & Autenticar o professor & Alta & OE2 \\
 \hline
-RF03 & Cadastrar e selecionar turmas \\
+RF03 & Cadastrar e selecionar turmas & Alta & OE3 \\
 \hline
-RF04 & Cadastrar e pesquisar alunos \\
+RF04 & Cadastrar e pesquisar alunos & Alta & OE3 \\
 \hline
-RF05 & Restringir o acesso aos registros do professor \\
+RF05 & Restringir o acesso aos registros do professor & Alta & OE2 \\
 \hline
-RF06 & Registrar observações pedagógicas \\
+RF06 & Registrar observações pedagógicas & Alta & OE3 \\
 \hline
-RF07 & Consultar o histórico das observações \\
+RF07 & Consultar o histórico das observações & Alta & OE3 \\
 \hline
-RF08 & Classificar a situação do aluno \\
+RF08 & Classificar a situação do aluno & Média & OE3 \\
 \hline
-RF09 & Gerar atividades com Inteligência Artificial \\
+RF09 & Gerar atividades com Inteligência Artificial & Alta & OE5 \\
 \hline
-RF10 & Armazenar as atividades geradas como rascunho \\
+RF10 & Armazenar as atividades geradas como rascunho & Alta & OE6 \\
 \hline
-RF11 & Permitir a revisão das atividades pelo professor \\
+RF11 & Permitir a revisão das atividades pelo professor & Alta & OE6 \\
 \hline
-RF12 & Permitir que o professor solicite a geração de uma imagem para complementar uma atividade pedagógica produzida com Inteligência Artificial \\
+RF12 & Permitir que o professor solicite a geração de uma imagem para complementar uma atividade pedagógica produzida com Inteligência Artificial & Média & OE8 \\
 \hline
-RF13 & Permitir que o professor consulte as atividades salvas no acompanhamento individual do aluno \\
+RF13 & Permitir que o professor consulte as atividades salvas no acompanhamento individual do aluno & Alta & OE3 \\
 \hline
 \end{tabular}
 \fonte{Elaborado pelos autores (2026).}
 \end{quadro}
 
-Entre os aspectos não funcionais contemplados na arquitetura estão a autenticação dos professores, a proteção das senhas e o controle de acesso aos registros pedagógicos, conforme o Quadro~\ref{qua:requisitos-nao-funcionais}.
+Os requisitos funcionais apresentados no Quadro~\ref{qua:requisitos-funcionais} contemplam as principais operações disponíveis ao professor, desde o gerenciamento de turmas e alunos até a geração de atividades pedagógicas por Inteligência Artificial. As prioridades foram estabelecidas considerando a importância de cada funcionalidade para os objetivos da plataforma.
 
-\begin{quadro}[htb]
+\begin{quadro}[H]
 \centering
 \caption{Requisitos não funcionais do sistema}
 \label{qua:requisitos-nao-funcionais}
-\begin{tabular}{|l|p{10cm}|}
+\begin{tabular}{|l|p{8cm}|c|c|}
 \hline
-\textbf{ID} & \textbf{Requisito não funcional} \\
+\textbf{ID} & \textbf{Requisito não funcional} & \textbf{Prioridade} & \textbf{Objetivo} \\
 \hline
-RNF01 & As senhas dos professores devem ser armazenadas de forma protegida, utilizando mecanismos criptográficos de derivação de senha \\
+RNF01 & As senhas dos professores devem ser armazenadas de forma protegida, utilizando mecanismos criptográficos de derivação de senha. & Alta & OE2 \\
 \hline
-RNF02 & O sistema deve utilizar sessões autenticadas para identificar o professor \\
+RNF02 & O sistema deve utilizar sessões autenticadas para identificar o professor. & Alta & OE2 \\
 \hline
-RNF03 & O backend deve verificar a autorização do professor antes de permitir acesso ou alteração de registros protegidos.\\
+RNF03 & O backend deve verificar a autorização do professor antes de permitir acesso ou alteração de registros protegidos. & Alta & OE2 \\
 \hline
-RNF04 & RNF04	A comunicação entre a interface e o backend deve utilizar requisições HTTP e dados estruturados em JSON.\\
+RNF04 & A interface deve apresentar organização visual clara, linguagem compreensível e identificação consistente das funcionalidades. & Alta & OE4 \\
+\hline
+RNF05 & A interface deve permitir navegação por teclado e apresentar rótulos identificáveis nos controles. & Alta & OE4 \\
+\hline
+RNF06 & Os indicadores visuais devem ser acompanhados de textos, evitando que a identificação de informações dependa exclusivamente das cores. & Média & OE4 \\
+\hline
+RNF07 & O tratamento de dados pessoais dos estudantes deve observar os princípios de finalidade, necessidade e segurança previstos na LGPD. & Alta & OE2 \\
+\hline
+RNF08 & O sistema deve minimizar a exposição de informações pessoais e sensíveis encaminhadas aos serviços de Inteligência Artificial. & Alta & OE2 \\
+\hline
+RNF09 & O sistema deve apresentar mensagens de feedback durante as operações, especialmente na geração de atividades pedagógicas. & Média & OE4 \\
+\hline
+RNF10 & A interface deve permanecer responsiva durante as principais operações, evitando bloqueios desnecessários à interação do usuário. & Média & OE4 \\
 \hline
 \end{tabular}
 \fonte{Elaborado pelos autores (2026).}
 \end{quadro}
+
+Os requisitos não funcionais apresentados no Quadro~\ref{qua:requisitos-nao-funcionais} abrangem aspectos relacionados à segurança, acessibilidade, usabilidade, desempenho e proteção de dados pessoais. Os requisitos de segurança e privacidade estão associados à proteção dos registros pedagógicos dos estudantes, enquanto os requisitos de acessibilidade e usabilidade buscam facilitar a interação dos professores com a plataforma. Os requisitos de desempenho consideram a necessidade de manter a interface responsiva durante as operações do sistema.
+
+A classificação por prioridade permite identificar os requisitos essenciais ao funcionamento da aplicação e aqueles que necessitam de verificações ou aprimoramentos adicionais. A relação com os objetivos específicos contribui para demonstrar como cada requisito está associado às finalidades estabelecidas para o IncluiEdu.
 
 \section{MODELAGEM DO SISTEMA}
 \label{sec:modelagem-sistema}
@@ -129,41 +150,91 @@ A prototipagem da interface foi realizada na plataforma Figma, com o objetivo de
 
 Na versão atual do IncluiEdu, a interface web apresenta as telas de cadastro, consulta e acompanhamento dos alunos. As ações realizadas pelo professor são enviadas à API por meio de requisições \texttt{fetch}, utilizando dados em formato JSON. O Cloudflare Worker recebe essas requisições, verifica a sessão e as permissões do usuário e realiza as operações necessárias no banco de dados D1. Em seguida, a resposta é enviada à interface, permitindo a atualização das informações apresentadas.
 
-A autenticação utiliza derivação de senhas com PBKDF2, salt e SHA-256, evitando o armazenamento das senhas em texto simples. Após o login, o sistema cria uma sessão identificada por um cookie configurado com os atributos \texttt{HttpOnly}, \texttt{Secure} e \texttt{SameSite=Strict}. O backend também verifica se os registros acessados pertencem ao professor autenticado antes de permitir consultas ou alterações.
+A autenticação utiliza derivação de senhas com PBKDF2, \textit{salt} e SHA-256, evitando o armazenamento das senhas em texto simples. Após o login, o sistema cria uma sessão identificada por um \textit{cookie} configurado com os atributos \texttt{HttpOnly}, \texttt{Secure} e \texttt{SameSite=Strict}. O \textit{backend} também verifica se os registros acessados pertencem ao professor autenticado antes de permitir consultas ou alterações.
 
-No acompanhamento pedagógico, cada registro reúne informações sobre o aluno, a área acompanhada, a habilidade observada, o nível de autonomia e as evidências registradas pelo professor. Esses dados são preservados no histórico pedagógico, permitindo acompanhar as observações realizadas ao longo do tempo. A situação do aluno também pode ser atualizada entre as opções \textit{Acompanhar}, \textit{Requer atenção} e \textit{Evoluindo}.
+No acompanhamento pedagógico, cada registro reúne informações sobre o aluno, a área acompanhada, a habilidade observada, o nível de autonomia e as evidências registradas pelo professor. Esses dados são preservados no histórico pedagógico, permitindo acompanhar as observações realizadas ao longo do tempo. A situação do aluno também pode ser atualizada entre as opções Acompanhar, Requer atenção e Evoluindo.
+
+A geração de atividades pedagógicas adaptadas é realizada por meio do Cloudflare Workers AI, utilizando o modelo de linguagem Gemma 4 26B A4B IT (\texttt{@cf/google/gemma-4-26b-a4b-it}). A integração ocorre no \textit{backend} da aplicação, responsável por receber as solicitações do professor, consultar os registros pedagógicos e encaminhar as informações ao modelo de Inteligência Artificial. O processo é iniciado quando o professor seleciona um aluno, descreve a atividade desejada e informa sua duração. O sistema recupera do banco de dados Cloudflare D1 a área de aprendizagem, a dificuldade ou habilidade cadastrada e até cinco observações pedagógicas recentes do estudante. Essas observações contêm informações sobre a área acompanhada, a habilidade trabalhada, o nível de autonomia e as evidências registradas pelo docente.
+
+Para orientar a geração, essas informações são organizadas em um \textit{prompt} estruturado, conforme apresentado no Quadro~\ref{qua:prompt-atividade}.
+
+\begin{quadro}[H]
+\centering
+\caption{\textit{Prompt} utilizado na geração de atividades pedagógicas}
+\label{qua:prompt-atividade}
+\begin{tabular}{|p{14cm}|}
+\hline
+“Você é um assistente pedagógico brasileiro especializado em educação inclusiva. Crie uma atividade escolar prática e segura para revisão do professor. Não faça diagnóstico clínico, não mencione o nome do estudante e não invente condições de saúde. \\
+\\
+Área acompanhada: \$\{s.area\} \\
+Dificuldade ou habilidade: \$\{s.difficulty\} \\
+Histórico recente: \\
+\$\{history\} \\
+Pedido do professor: \$\{requestText\} \\
+Duração: \$\{duration\} minutos \\
+\\
+Responda somente com JSON válido, sem markdown, nesta estrutura: \{"titulo":"...","objetivo":"...","orientacoes":"...","atividade":"..."\}. A atividade deve conter materiais, passos numerados, adaptação e uma forma simples de o professor registrar o resultado. Escreva em português do Brasil.” \\
+\hline
+\end{tabular}
+\fonte{Código-fonte do IncluiEdu, elaborado pelos autores (2026).}
+\end{quadro}
+
+Os campos apresentados entre \$\{...\} são preenchidos automaticamente pelo sistema. A variável \texttt{s.area} representa a área acompanhada, enquanto \texttt{s.difficulty} corresponde à dificuldade ou habilidade cadastrada. A variável \texttt{history} reúne até cinco observações pedagógicas recentes, \texttt{requestText} contém a solicitação do professor e \texttt{duration} corresponde à duração prevista, limitada ao intervalo de 5 a 60 minutos.
+
+A requisição ao modelo utiliza os parâmetros \texttt{temperature} de 0,65, \texttt{max\_tokens} de 1100 e \texttt{enable\_thinking} configurado como \texttt{false}. O modelo recebe as instruções em uma mensagem com papel \texttt{user} e deve retornar exclusivamente um objeto JSON contendo os campos \texttt{titulo}, \texttt{objetivo}, \texttt{orientacoes} e \texttt{atividade}. Após o recebimento, o \textit{backend} interpreta a resposta e verifica o preenchimento dos quatro campos obrigatórios. Quando a estrutura é válida, a atividade é armazenada no banco de dados com o \textit{status} de rascunho, permitindo sua revisão pelo professor. Caso ocorra uma falha na geração ou na interpretação da resposta, o sistema apresenta uma mensagem de erro.
+
+A personalização das atividades ocorre a partir das informações pedagógicas associadas ao estudante. Dessa forma, o modelo recebe dados sobre as dificuldades, habilidades e níveis de autonomia registrados, podendo elaborar propostas com diferentes materiais, etapas e adaptações, de acordo com o contexto informado. Durante a geração das atividades, o sistema não inclui explicitamente o nome do estudante nas instruções encaminhadas ao modelo de Inteligência Artificial. Entretanto, são utilizadas informações referentes ao acompanhamento pedagógico, como dificuldades de aprendizagem, habilidades e observações registradas pelo professor. Considerando que esses registros podem conter dados pessoais sensíveis de crianças, seu tratamento deve observar as disposições da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), especialmente os artigos 11 e 14, relacionados ao tratamento de dados sensíveis e de dados pessoais de crianças e adolescentes \cite{brasil2018lgpd}.
+
+Além da geração textual, o IncluiEdu disponibiliza um recurso para produzir imagens complementares às atividades pedagógicas, correspondente ao requisito funcional RF12 e ao objetivo específico OE8. Essa funcionalidade utiliza o modelo FLUX.1 Schnell (\texttt{@cf/black-forest-labs/flux-1-schnell}), disponibilizado pelo Cloudflare Workers AI. A geração é realizada a partir de um \textit{prompt} que considera a área de aprendizagem, o objetivo pedagógico e os primeiros 700 caracteres do conteúdo da atividade, conforme apresentado no Quadro~\ref{qua:prompt-imagem}.
+
+\begin{quadro}[H]
+\centering
+\caption{\textit{Prompt} utilizado na geração de imagens pedagógicas}
+\label{qua:prompt-imagem}
+\begin{tabular}{|p{14cm}|}
+\hline
+“Ilustração pedagógica infantil, acolhedora, inclusiva e apropriada para escola pública brasileira. Crie uma folha de atividade visual simples, com fundo claro, formas grandes, contornos nítidos e poucos elementos. Sem nomes de pessoas, sem logotipos, sem diagnósticos, sem texto escrito e sem marcas d'água. Área: \$\{activity.area\}. Objetivo: \$\{activity.objective\}. Contexto da atividade: \$\{activity.content.slice(0, 700)\}. A imagem deve apoiar a atividade, ser fácil de compreender e adequada para impressão em folha A4.” \\
+\hline
+\end{tabular}
+\fonte{Código-fonte do IncluiEdu, elaborado pelos autores (2026).}
+\end{quadro}
+
+O modelo é executado com o parâmetro \texttt{steps} configurado em 4. A imagem gerada é retornada ao navegador no formato JPEG, podendo complementar visualmente a atividade elaborada. O recurso busca produzir ilustrações com poucos elementos, contornos nítidos e características adequadas à impressão e à utilização em atividades escolares. A geração de imagens constitui uma funcionalidade complementar à elaboração textual, oferecendo ao professor recursos visuais que podem auxiliar na apresentação dos conteúdos. Assim como ocorre com as atividades produzidas pelo modelo de linguagem, os materiais visuais devem ser avaliados pelo docente antes de sua utilização.
 
 \section{TESTES E VALIDAÇÃO}
 \label{sec:testes-validacao}
 
-A verificação das funcionalidades do IncluiEdu foi realizada manualmente, por meio da interação com a aplicação. Os cenários de teste abrangem autenticação, organização de turmas, cadastro e consulta de alunos, observações pedagógicas, atualização da situação do aluno, geração de atividades e controle de acesso. Os procedimentos estão relacionados aos requisitos funcionais do sistema, conforme o Quadro~\ref{qua:testes}.
+A validação do IncluiEdu foi planejada para ser conduzida por meio de testes manuais, com o objetivo de verificar o funcionamento das principais funcionalidades da aplicação à luz dos requisitos definidos para o sistema. Os testes foram realizados por Pedro Henrique Silvério da Fonseca, integrante da equipe de desenvolvimento, por meio da interação direta com a aplicação em ambiente de desenvolvimento.
+
+Para a execução dos testes, foram utilizados dados demonstrativos, incluindo nomes dos integrantes do grupo e dificuldades de aprendizagem fictícias, de modo a evitar a exposição de dados reais de estudantes. O ambiente de testes foi configurado com duas turmas e cinco alunos cadastrados, contemplando diferentes áreas de aprendizagem, como Matemática, Leitura e escrita e Comunicação e linguagem.
+
+Os procedimentos foram organizados em nove cenários de teste, apresentados no Quadro~\ref{qua:cenarios-teste}. Para cada cenário, foi prevista a realização de três execuções, totalizando 27 execuções. Os resultados observados são apresentados no Capítulo~\ref{chap:resultados}.
 
 \begin{quadro}[H]
 \centering
-\caption{Cenários de teste e resultados observados}
-\label{qua:testes}
-\small
-\begin{tabular}{|p{2cm}|p{7cm}|p{6cm}|}
+\caption{Planejamento dos cenários de teste}
+\label{qua:cenarios-teste}
+\begin{tabular}{|l|p{10cm}|}
 \hline
-\textbf{Cenário} & \textbf{Procedimento realizado} & \textbf{Resultado} \\
+\textbf{Cenário} & \textbf{Procedimento de teste} \\
 \hline
-Autenticação & Realização de login com credenciais válidas e inválidas. & O sistema permitiu o acesso com credenciais válidas e impediu a entrada com dados incorretos. \\
+Autenticação & Realizar login com credenciais válidas e inválidas. \\
 \hline
-Turmas e alunos & Cadastro de turma e aluno, seleção de turma e pesquisa de aluno pelo nome. & As informações cadastradas foram exibidas corretamente, permitindo selecionar turmas e localizar alunos. \\
+Turmas e alunos & Cadastrar turmas e alunos, selecionar turmas e pesquisar estudantes. \\
 \hline
-Acompanha- mento & Abertura do acompanhamento individual de um aluno. & O sistema apresentou as informações do aluno, incluindo sua situação atual, registros pedagógicos e atividades salvas. \\
+Acompanhamento & Consultar o acompanhamento individual de um aluno. \\
 \hline
-Registro pedagógico & Preenchimento dos campos de área, habilidade, nível de autonomia e evidência observada, seguido do salvamento. & O registro foi armazenado e disponibilizado para consulta no histórico pedagógico do aluno. \\
+Registro pedagógico & Preencher e salvar observações pedagógicas. \\
 \hline
-Situação do aluno & Alteração da situação entre \textit{Acompanhar}, \textit{Requer atenção} e \textit{Evoluindo}. & A situação foi atualizada e apresentada no perfil do aluno e no painel de acompanhamento. \\
+Situação do aluno & Alterar a classificação entre Evoluindo, Acompanhar e Requer atenção. \\
 \hline
-Inteligência Artificial & Solicitação de uma atividade pedagógica personalizada por meio da IA. & O sistema apresentou uma atividade contendo título, objetivo, orientações e conteúdo pedagógico, identificada como rascunho para revisão. \\
+Inteligência Artificial & Solicitar uma atividade personalizada e verificar seu armazenamento como rascunho. \\
 \hline
-Geração de imagem & Utilização da opção de gerar imagem para uma atividade produzida pela IA. & O sistema gerou uma imagem relacionada à atividade pedagógica solicitada, disponibilizando o resultado para utilização pelo professor. \\
+Geração de imagem & Solicitar uma imagem complementar à atividade pedagógica. \\
 \hline
-Encerra- mento de sessão & Utilização da opção \textit{Sair} após autenticação. & A sessão foi encerrada, retornando o usuário à área de autenticação. \\
+Encerramento de sessão & Utilizar a opção Sair e verificar o encerramento da sessão. \\
 \hline
-Controle de acesso & Tentativa de consultar registros de outro professor utilizando uma conta diferente. & O sistema impediu o acesso aos registros vinculados ao outro professor. \\
+Controle de acesso & Tentar acessar registros de outro professor utilizando uma conta diferente. \\
 \hline
 \end{tabular}
 \fonte{Elaborado pelos autores (2026).}

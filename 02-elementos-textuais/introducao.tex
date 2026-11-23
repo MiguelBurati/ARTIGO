@@ -28,20 +28,41 @@ Diante disso, o problema que este trabalho se propõe a responder é: Como apoia
 
 \section{OBJETIVOS}
 
+Os objetivos deste trabalho estão organizados em dois níveis: o objetivo geral, que sintetiza a finalidade central da pesquisa, e os objetivos específicos, que detalham as etapas necessárias para alcançá-la. O objetivo geral apresenta a proposta do IncluiEdu de forma abrangente, enquanto os objetivos específicos desdobram as ações de fundamentação, definição de requisitos, modelagem, implementação, integração com Inteligência Artificial e validação do sistema.
+
 \subsection{OBJETIVO GERAL}
 Desenvolver o IncluiEdu, um sistema web fundamentado em Inteligência Artificial Generativa, destinado a apoiar professores do ensino fundamental na criação de atividades pedagógicas adaptadas para alunos neurodivergentes, de modo a otimizar o tempo de planejamento docente e assegurar que a validação pedagógica e ética dos materiais permaneça sob controle do professor.
 \subsection{OBJETIVOS ESPECÍFICOS}
 
-\begin{itemize}
-    \item Identificar, por meio da literatura, os principais desafios enfrentados por professores do ensino fundamental público na criação de atividades adaptadas para alunos neurodivergentes.
-    \item Definir os requisitos funcionais e não funcionais do sistema, com foco na segurança dos dados (LGPD) e no controle de acesso aos registros pedagógicos.
-    \item Projetar a arquitetura e o modelo de banco de dados relacional para o armazenamento de turmas, alunos e histórico de observações pedagógicas.
-    \item Desenvolver uma interface web inclusiva, aplicando princípios de neuroinclusão, como a paleta de cores pastéis e a sinalização cromática (badges), para a redução da carga cognitiva do professor.
-    \item Implementar a integração com a Inteligência Artificial Generativa (via Cloudflare Workers AI) para a criação de atividades pedagógicas personalizadas.
-    \item Implementar um recurso de geração de imagens pedagógicas por meio de Inteligência Artificial Generativa, visando complementar visualmente as atividades adaptadas produzidas pelo sistema.
-    \item Estabelecer um mecanismo de segurança pedagógica no qual as atividades geradas pela IA sejam armazenadas obrigatoriamente como rascunhos, exigindo a revisão e validação final do professor.
-    \item Validar o sistema por meio de testes manuais de usabilidade e funcionamento dos fluxos de cadastro, acompanhamento e geração de conteúdo.
-\end{itemize}
+Os objetivos específicos contemplam as principais funcionalidades e etapas do projeto, abrangendo desde a identificação dos desafios enfrentados pelos professores até a validação do sistema. A codificação adotada (OE1 a OE8) permite relacionar cada objetivo aos requisitos funcionais e não funcionais descritos no Capítulo~\ref{chap:materiais-e-metodos}, conforme o Quadro~\ref{qua:objetivos-especificos}.
+
+\begin{quadro}[H]
+\centering
+\caption{Objetivos específicos do trabalho}
+\label{qua:objetivos-especificos}
+\begin{tabular}{|l|p{15cm}|}
+\hline
+\textbf{ID} & \textbf{Objetivo específico} \\
+\hline
+OE1 & Identificar, por meio da literatura, os principais desafios enfrentados por professores do ensino fundamental público na criação de atividades adaptadas para alunos neurodivergentes. \\
+\hline
+OE2 & Definir os requisitos funcionais e não funcionais do sistema, com foco na segurança dos dados (LGPD) e no controle de acesso aos registros pedagógicos. \\
+\hline
+OE3 & Projetar a arquitetura e o modelo de banco de dados relacional para o armazenamento de turmas, alunos e histórico de observações pedagógicas. \\
+\hline
+OE4 & Desenvolver uma interface web inclusiva, aplicando princípios de neuroinclusão, como a paleta de cores pastéis e a sinalização cromática (badges), para a redução da carga cognitiva do professor. \\
+\hline
+OE5 & Implementar a integração com a Inteligência Artificial Generativa (via Cloudflare Workers AI) para a criação de atividades pedagógicas personalizadas. \\
+\hline
+OE6 & Estabelecer um mecanismo de segurança pedagógica no qual as atividades geradas pela IA sejam armazenadas obrigatoriamente como rascunhos, exigindo a revisão e validação final do professor. \\
+\hline
+OE7 & Validar o sistema por meio de testes manuais de usabilidade e funcionamento dos fluxos de cadastro, acompanhamento e geração de conteúdo. \\
+\hline
+OE8 & Implementar um recurso de geração de imagens pedagógicas por meio de Inteligência Artificial Generativa, visando complementar visualmente as atividades adaptadas produzidas pelo sistema. \\
+\hline
+\end{tabular}
+\fonte{Elaborado pelos autores (2026).}
+\end{quadro}
 
 \section{JUSTIFICATIVA}
 

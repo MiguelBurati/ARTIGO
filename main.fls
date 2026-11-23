@@ -592,6 +592,7 @@ INPUT D:\MikTex\tex\latex\lm\ts1lmr.fd
 INPUT D:\MikTex\fonts\tfm\public\lm\ts1-lmr12.tfm
 INPUT D:\MikTex\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT D:\MikTex\fonts\enc\dvips\lm\lm-ts1.enc
+INPUT D:\MikTex\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT .\02-elementos-textuais\tecnicaref.tex
 INPUT .\02-elementos-textuais\tecnicaref.tex
 OUTPUT .\02-elementos-textuais\tecnicaref.aux
@@ -599,7 +600,6 @@ INPUT .\02-elementos-textuais\tecnicaref.tex
 INPUT .\02-elementos-textuais\tecnicaref.tex
 INPUT 02-elementos-textuais\tecnicaref.tex
 INPUT D:\MikTex\fonts\tfm\public\lm\ec-lmri12.tfm
-INPUT D:\MikTex\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT .\02-elementos-textuais\disposicoes.tex
 INPUT .\02-elementos-textuais\disposicoes.tex
 OUTPUT .\02-elementos-textuais\disposicoes.aux
@@ -627,12 +627,7 @@ INPUT .\04-figuras\modelo-relacional.png
 INPUT .\04-figuras\modelo-relacional.png
 INPUT .\04-figuras\modelo-relacional.png
 INPUT .\04-figuras\modelo-relacional.png
-INPUT D:\MikTex\fonts\tfm\public\lm\rm-lmr10.tfm
-INPUT D:\MikTex\fonts\tfm\public\lm\lmmi10.tfm
-INPUT D:\MikTex\fonts\tfm\public\lm\lmsy10.tfm
-INPUT D:\MikTex\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT D:\MikTex\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT D:\MikTex\fonts\tfm\public\lm\ec-lmri10.tfm
+INPUT D:\MikTex\fonts\tfm\public\lm\ec-lmbxi10.tfm
 INPUT .\02-elementos-textuais\estrutura.tex
 INPUT .\02-elementos-textuais\estrutura.tex
 OUTPUT .\02-elementos-textuais\estrutura.aux
@@ -741,12 +736,12 @@ INPUT D:\MikTex\fonts\type1\public\lm\lmbx12.pfb
 INPUT D:\MikTex\fonts\type1\public\lm\lmbx12.pfb
 INPUT D:\MikTex\fonts\type1\public\lm\lmbx9.pfb
 INPUT D:\MikTex\fonts\type1\public\lm\lmbx9.pfb
+INPUT D:\MikTex\fonts\type1\public\lm\lmbxi10.pfb
+INPUT D:\MikTex\fonts\type1\public\lm\lmbxi10.pfb
 INPUT D:\MikTex\fonts\type1\public\lm\lmr10.pfb
 INPUT D:\MikTex\fonts\type1\public\lm\lmr10.pfb
 INPUT D:\MikTex\fonts\type1\public\lm\lmr12.pfb
 INPUT D:\MikTex\fonts\type1\public\lm\lmr12.pfb
-INPUT D:\MikTex\fonts\type1\public\lm\lmri10.pfb
-INPUT D:\MikTex\fonts\type1\public\lm\lmri10.pfb
 INPUT D:\MikTex\fonts\type1\public\lm\lmri12.pfb
 INPUT D:\MikTex\fonts\type1\public\lm\lmri12.pfb
 INPUT D:\MikTex\fonts\type1\public\lm\lmtt12.pfb
